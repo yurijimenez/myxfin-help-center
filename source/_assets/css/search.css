@@ -1,0 +1,206 @@
+/* ══════════════════════════
+   HEADER SEARCH BAR
+══════════════════════════ */
+
+.docsearch-input__wrapper {
+    @apply relative;
+    @apply bg-white;
+    @apply mt-7;
+    @apply left-0;
+    @apply top-0;
+    @apply px-4;
+    @apply w-full;
+    @apply z-10;
+
+    @media (width >= theme(--breakpoint-md)) {
+        @apply mt-0;
+        @apply px-0;
+        @apply relative;
+    }
+}
+
+.docsearch-input {
+    width: 240px;
+    height: 38px;
+    background-color: #f1f5f9;
+    background-image: url('/assets/img/magnifying-glass.svg');
+    background-position: 11px center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    border: 1.5px solid transparent;
+    border-radius: 8px;
+    padding: 0 1rem 0 2.4rem;
+    font-family: 'DM Sans', 'Sora', sans-serif;
+    font-size: 0.875rem;
+    color: #111827;
+    outline: none;
+    transition:
+        width 0.25s ease,
+        background-color 0.2s,
+        border-color 0.2s,
+        box-shadow 0.2s;
+    text-indent: 0;
+}
+
+.docsearch-input::placeholder {
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.docsearch-input:hover {
+    background-color: #e9eef5;
+    border-color: #d1d5db;
+}
+
+.docsearch-input:focus {
+    background-color: #fff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+@media (width >= theme(--breakpoint-lg)) {
+    .docsearch-input:focus {
+        @apply w-2/3;
+    }
+}
+
+@media (width >= theme(--breakpoint-xl)) {
+    .docsearch-input:focus {
+        @apply w-1/2;
+    }
+}
+
+/* ── Keyboard shortcut hint ── */
+.docsearch-input__wrapper::after {
+    content: '⌘K';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.7rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: #9ca3af;
+    background: #e5e7eb;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 1px 5px;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    line-height: 1.6;
+}
+
+.docsearch-input:focus ~ .docsearch-input__wrapper::after,
+.docsearch-input:focus + *::after {
+    opacity: 0;
+}
+
+/* ══════════════════════════
+   ALGOLIA DROPDOWN
+══════════════════════════ */
+
+.algolia-autocomplete {
+    @apply text-right;
+    @apply w-full;
+}
+
+.algolia-autocomplete .ds-dropdown-menu {
+    width: 100%;
+    max-width: 680px !important;
+    min-width: auto !important;
+    border: 1.5px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1) !important;
+    margin-top: 6px !important;
+    overflow: hidden;
+    padding: 6px 0 !important;
+}
+
+/* Remove default arrow */
+.algolia-autocomplete .ds-dropdown-menu::before {
+    display: none !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion {
+    border-bottom: 1px solid #f3f4f6 !important;
+    transition: background 0.15s;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion:last-child {
+    border-bottom: none !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion:hover,
+.algolia-autocomplete .algolia-docsearch-suggestion.ds-cursor {
+    background-color: #eff6ff !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--content {
+    @apply w-full;
+
+    @media (width >= theme(--breakpoint-md)) {
+        @apply w-2/3;
+    }
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #111827 !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--text {
+    @apply font-normal;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #6b7280 !important;
+    line-height: 1.5;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--highlight {
+    color: #3b82f6 !important;
+    background: none !important;
+    font-weight: 600;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
+    @apply py-3;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
+    @apply hidden;
+    font-size: 0.78rem;
+    color: #9ca3af !important;
+    font-family: 'DM Sans', sans-serif;
+
+    @media (width >= theme(--breakpoint-md)) {
+        @apply w-1/3;
+        @apply inline-block;
+    }
+}
+
+/* Category header */
+.algolia-autocomplete .ds-dropdown-menu .ds-suggestion:first-child .algolia-docsearch-suggestion--category-header {
+    border-top: none !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #3b82f6 !important;
+    padding: 8px 1rem 4px !important;
+    border-top: 1px solid #f3f4f6 !important;
+    background: #fff !important;
+}
+
+/* Footer branding */
+.algolia-autocomplete .algolia-docsearch-footer {
+    border-top: 1px solid #f3f4f6 !important;
+    padding: 8px 1rem !important;
+}

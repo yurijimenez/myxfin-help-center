@@ -1,0 +1,526 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+/* ── BASE ── */
+.sidebar-myxfin {
+    background-color: #3f63a3; 
+    color: white;
+    min-height: 100vh;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.9375rem;
+}
+
+/* ── LINKS & TOGGLES ── */
+.sidebar-myxfin a,
+.js-menu-toggle {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    padding: 0.55rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 6px;
+}
+
+/* Chevron sits naturally to the right via justify-content: space-between */
+.js-menu-toggle svg,
+.js-menu-toggle .chevron {
+    flex-shrink: 0;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+}
+.js-menu-toggle.is-open svg,
+.js-menu-toggle.is-open .chevron {
+    transform: rotate(180deg);
+}
+
+/* ── SUB-MENU ── */
+.child-menu {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.child-menu a {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75);
+    padding: 0.48rem 1rem 0.48rem 1.75rem;
+    justify-content: flex-start;
+}
+
+/* ── UTILITY ── */
+.hidden { display: none !important; }
+.rotate-180 { transform: rotate(180deg); }
+
+/* ── HOVER ── */
+.sidebar-myxfin a:hover,
+.js-menu-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.child-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+
+/* ── ACTIVE ── */
+.sidebar-myxfin a.active,
+.sidebar-myxfin a[aria-current="page"] {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+/*For the content of the sidebars*/
+:root {
+    --blue:      #3b82f6;
+    --blue-dark: #1d4ed8;
+    --blue-head: #103a96;
+    --blue-sub:  #3b68b1;
+    --blue-tip:  #eff6ff;
+    --blue-tip-border: #3672d3;
+    --gray-text: #374151;
+    --gray-muted:#6b7280;
+    --border:    #e5e7eb;
+    --bg:        #f9fafb;
+}
+
+/* ══════════════════════════
+   PROSE WRAPPER
+══════════════════════════ */
+.prose {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem 5rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--gray-text);
+}
+
+/* ── Breadcrumb ── */
+.prose-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    color: var(--gray-muted);
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+.prose-breadcrumb a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+.prose-breadcrumb a:hover { text-decoration: underline; }
+.prose-breadcrumb span { color: #d1d5db; }
+
+/* ── Meta row (read time, date) ── */
+.prose-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.78rem;
+    color: var(--gray-muted);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+.prose-meta-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #eff6ff;
+    color: var(--blue);
+    border: 1px solid #dbeafe;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    border-radius: 100px;
+}
+
+/* ── H1 ── */
+.prose h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(1.6rem, 4vw, 2.25rem);
+    font-weight: 800;
+    color: var(--blue-head);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+/* ── H2 ── */
+.prose h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #111;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+    letter-spacing: -0.25px;
+}
+
+/* ── H3 ── */
+.prose h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blue-sub);
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.prose h3::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 1em;
+    background: var(--blue);
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+/* ── Paragraphs ── */
+.prose p {
+    margin-bottom: 1.25rem;
+}
+
+/* ── Tighter Ordered List ── */
+.prose ol {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    counter-reset: step-counter;
+}
+
+.prose ol li {
+    counter-increment: step-counter;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem; /* Reduced gap between number and text */
+    margin-bottom: 0.5rem; /* Significantly reduced space between items */
+    padding: 0.6rem 0.8rem; /* Reduced padding inside the card */
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: all 0.18s ease;
+    line-height: 1.5; /* Forces a consistent distance between lines */
+}
+
+.prose ol li:hover {
+    border-color: #bfdbfe;
+    box-shadow: 0 2px 8px rgba(59,130,246,0.06);
+}
+
+.prose ol li::before {
+    content: counter(step-counter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px; /* Slightly smaller circle */
+    height: 24px;
+    background: var(--blue);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 2px; /* Centers circle better with first line of text */
+}
+
+/* Fix for bold text pushing lines apart */
+.prose ol li strong {
+    color: #111827;
+    font-weight: 600;
+    line-height: inherit; /* Ensures bold text follows the li line-height */
+}
+
+/* ── Unordered list ── */
+.prose ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+.prose ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding-left: 0.25rem;
+}
+.prose ul li::before {
+    content: '›';
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    flex-shrink: 0;
+}
+
+/* ── Images ── */
+.prose img {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+  
+    box-shadow: 0 0 40px -2px rgba(59, 130, 246, 0.15), 
+                0 0 20px -5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05); 
+    margin: 2.5rem 0 0.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Slight lift and glow intensifies on hover */
+.prose img:hover {
+    transform: scale(1.01); /* Subtle grow instead of just moving up */
+    box-shadow: 0 0 50px -5px rgba(59, 130, 246, 0.25);
+}
+
+/* ── Captions ── */
+.prose em {
+    display: block;
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--gray-muted);
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+
+/* ── Blockquote / Tip box ── */
+.prose blockquote {
+    background: var(--blue-tip);
+    border-left: 4px solid var(--blue-tip-border);
+    padding: 1.1rem 1.4rem;
+    margin: 2rem 0;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+}
+.prose blockquote::before {
+    content: '';
+    display: block;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--blue-tip-border);
+    margin-bottom: 0.4rem;
+}
+.prose blockquote p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #1e40af;
+}
+
+/* ── Inline code ── */
+.prose code {
+    background: #f1f5f9;
+    color: #0f172a;
+    font-size: 0.85em;
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-family: 'ui-monospace', monospace;
+    border: 1px solid #e2e8f0;
+}
+
+/* ── Code block ── */
+.prose pre {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 1.25rem 1.5rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+    line-height: 1.65;
+}
+.prose pre code {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    font-size: inherit;
+}
+
+/* ── Horizontal rule ── */
+.prose hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2.5rem 0;
+}
+
+/* ── Anchor links inside prose ── */
+.prose a {
+    color: var(--blue);
+    text-decoration: underline;
+    text-decoration-color: #bfdbfe;
+    text-underline-offset: 3px;
+    transition: color 0.15s, text-decoration-color 0.15s;
+}
+.prose a:hover {
+    color: var(--blue-dark);
+    text-decoration-color: var(--blue-dark);
+}
+
+/* ── "Was this helpful?" footer ── */
+.prose-feedback {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.prose-feedback p {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+}
+.feedback-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 5px 14px;
+    border-radius: 7px;
+    border: 1.5px solid var(--border);
+    background: #fff;
+    color: #374151;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    text-decoration: none;
+}
+.feedback-btn:hover { border-color: var(--blue); color: var(--blue); background: #eff6ff; }
+
+/* ── Related articles sidebar strip ── */
+.prose-related {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+.prose-related h4 {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gray-muted);
+    margin-bottom: 0.75rem;
+}
+.prose-related ul {
+    margin: 0; padding: 0;
+}
+.prose-related ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+}
+.prose-related ul li::before { display: none; }
+.prose-related ul li a {
+    font-size: 0.875rem;
+    color: var(--blue);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.prose-related ul li a::before {
+    content: '→';
+    font-size: 0.8rem;
+    color: #93c5fd;
+}
+.prose-related ul li a:hover { text-decoration: underline; }
+
+/*COMMON QUESTIONS*/
+
+/* FAQ Page Styles */
+.faq-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    text-align: left;
+    font-weight: 600;
+    color: #1f2937;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.faq-item.active .faq-question {
+    color: #3b82f6;
+}
+
+.faq-item.active svg {
+    transform: rotate(180deg);
+    color: #3b82f6;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 0 1.25rem;
+    color: #4b5563;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px; /* Large enough for long answers */
+    padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+
