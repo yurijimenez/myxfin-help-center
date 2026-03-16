@@ -7,6 +7,10 @@ section: content
 
 # AR Adjustment
 
+AR (Accounts Receivable) Adjustment allows users to correct, update, or reverse customer-related transactions in MyxFin. This feature is used to fix mistakes in invoices, payments received, or credits applied to customer accounts, ensuring that accounts receivable records are accurate.
+
+---
+
 ![Navigating to AR Adjustment](/assets/img/aradjust.png)
 ![Navigating to AR Adjustment](/assets/img/aradjust1.png)
 

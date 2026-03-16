@@ -5,7 +5,11 @@ extends: _layouts.documentation
 section: content
 ---
 
-# Classification
+# Item Classification
+
+Item Classification is used to organize and categorize items in MyxFin. This module allows users to create, update, or deactivate classifications to better manage their inventory and reporting. By assigning items to proper classifications, you can easily track product types, generate reports, and maintain a well-structured inventory system.
+
+---
 
 ### How to Create a New Classification:
 1. Go to**Master Data**Files. 

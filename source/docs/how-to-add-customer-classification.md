@@ -7,6 +7,10 @@ section: content
 
 # Customer Classification
 
+Customer Classification in MyxFin allows users to organize customers into categories for better management and reporting. This module helps group customers by type, region, or any other custom criteria to streamline sales, invoicing, and reporting processes.
+
+---
+
 ### How to Add New Customer Classification:
 1. Go to **Master Data** Files. 
 2. Click **Customers**

@@ -57,7 +57,7 @@
         </a>
 
         {{-- Box 2 --}}
-        <a href="#" class="feature-card is-red">
+        <a href="/docs/video-tutorial" class="feature-card is-red">
             <div class="card-glow"></div>
             <div class="card-top">
                 <div class="card-icon">🎬</div>
@@ -71,7 +71,7 @@
         </a>
 
         {{-- Box 3 --}}
-        <a href="#" class="feature-card is-green">
+        <a href="/docs/system-updates" class="feature-card is-green">
             <div class="card-glow"></div>
             <div class="card-top">
                 <div class="card-icon">⚙️</div>
@@ -91,16 +91,19 @@
 <div class="contact-banner">
     <div class="contact-inner">
         <div class="contact-text">
-            <div class="contact-badge">Support</div>
-            <h3>Still need help?</h3>
-            <p>Our support team is available Monday – Sunday, 8 AM – 5 PM.</p>
+            <div class="contact-badge">Contact Us</div>
+            <h3>Get in touch today!</h3>
+            <p>Our team is available Monday – Sunday, 8 AM – 5 PM.</p>
         </div>
         <div class="contact-actions">
-            <a href="#" class="btn-primary">
-                <span>💬</span> Chat with Support
+            <a href="tel:+639175031616" class="btn-primary">
+                <span>📞</span> +63.917.503.1616
             </a>
-            <a href="#" class="btn-ghost">
-                <span>📧</span> Send a Ticket
+            <a href="mailto:sales@sert.ph" class="btn-ghost">
+                <span>📧</span> sales@sert.ph
+            </a>
+            <a href="https://myxfin.com/" target="_blank" class="btn-ghost">
+                <span>🌐</span> Visit myxfin.com
             </a>
         </div>
     </div>

@@ -215,55 +215,66 @@
 }
 
 /* ── Tighter Ordered List ── */
+/* ── Final Tighter Ordered List Fix ── */
 .prose ol {
-    list-style: none;
-    padding: 0;
+    list-style: none !important;
+    padding: 0 !important;
     margin-bottom: 1.5rem;
     counter-reset: step-counter;
 }
 
 .prose ol li {
     counter-increment: step-counter;
-    display: flex;
+    display: flex !important;
     align-items: flex-start;
-    gap: 0.75rem; /* Reduced gap between number and text */
-    margin-bottom: 0.5rem; /* Significantly reduced space between items */
-    padding: 0.6rem 0.8rem; /* Reduced padding inside the card */
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    padding: 1.25rem;
     background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 8px;
+    border: 1px solid var(--border, #e5e7eb);
+    border-radius: 12px;
     transition: all 0.18s ease;
-    line-height: 1.5; /* Forces a consistent distance between lines */
+    width: 100% !important;
 }
 
-.prose ol li:hover {
-    border-color: #bfdbfe;
-    box-shadow: 0 2px 8px rgba(59,130,246,0.06);
+/* This targets the container holding the text and bold parts */
+.prose ol li > *:not(::before) {
+    flex: 1;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline !important; /* Forces bold and regular text to stay together */
+    line-height: 1.6;
+}
+
+/* Specific fix for bold tags inside the list */
+.prose ol li strong, 
+.prose ol li b {
+    display: inline !important; /* Prevents bold from jumping to a new line */
+    margin: 0 !important;
+    color: #111827;
+    font-weight: 700;
 }
 
 .prose ol li::before {
     content: counter(step-counter);
-    display: flex;
+    flex-shrink: 0;
+    display: flex !important;
     align-items: center;
     justify-content: center;
-    min-width: 24px; /* Slightly smaller circle */
-    height: 24px;
-    background: var(--blue);
+    width: 28px;
+    height: 28px;
+    background: #3b82f6; /* Your sidebar blue */
     color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 800;
     border-radius: 50%;
-    flex-shrink: 0;
-    margin-top: 2px; /* Centers circle better with first line of text */
+    margin-top: 2px;
 }
 
-/* Fix for bold text pushing lines apart */
-.prose ol li strong {
-    color: #111827;
-    font-weight: 600;
-    line-height: inherit; /* Ensures bold text follows the li line-height */
+.prose ol li:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.08);
 }
-
 /* ── Unordered list ── */
 .prose ul {
     list-style: none;

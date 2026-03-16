@@ -1,11 +1,11 @@
 ---
-title: New Department
+title: Department
 description: A step-by-step guide to managing your accounts in MyxFin.
 extends: _layouts.documentation
 section: content
 ---
 
-# New Department
+# Department
 
 Departments define organizational units used as cost centers in the ERP system. They are referenced in transactions to accurately allocate and monitor costs and expenses.
 

@@ -15,12 +15,12 @@ contributes to managing the business's cash flow, helping ensure sufficient fund
 expenses. 
 
 ### How to Create a New Banks:
-1. Go to **Master Data Files**. 
-2. Click **Accounting Parameters**.
-3. Click **Banks**. 
-4. Click **Create New (F1)**. 
+1. Go to **Master Data Files**
+2. Click **Accounting Parameters**
+3. Click **Banks**
+4. Click **Create New (F1)** 
 5. Enter the details of the new bank. 
-6. Click **Save (F2)**.
+6. Click **Save (F2)**
 
 ---
 

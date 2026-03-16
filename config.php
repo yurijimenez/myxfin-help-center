@@ -9,8 +9,28 @@ return [
     'siteDescription' => 'Beautiful docs powered by Jigsaw',
     'collections' => [
         'docs' => [
-            'path' => 'docs/{collection_path}', //keeps the folder structure (en/ or ph/)
+            'path' => 'docs/{collection_path}', // keeps the folder structure (en/ or ph/)
             'sort' => 'title',
+            // --- CLEAN SEARCH INDEXER START ---
+            'index' => function ($page) {
+                $content = $page->getContent();
+                
+                // Removes #, **, and link syntax to clean the snippet
+                $clean = preg_replace('/[#*!\[\]\(\)]+/', '', $content);
+                
+                // Removes \r and \n (new lines/carriage returns)
+                $clean = str_replace(["\r", "\n"], ' ', $clean);
+                
+                // Strip HTML tags and trim whitespace
+                $clean = trim(strip_tags($clean));
+
+                return [
+                    'title' => trim(str_replace('#', '', $page->title)),
+                    'link' => $page->getUrl(),
+                    'snippet' => substr($clean, 0, 150) . '...',
+                ];
+            },
+            
         ],
     ],
         

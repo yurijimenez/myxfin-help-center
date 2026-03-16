@@ -7,6 +7,10 @@ section: content
 
 # AR Payment 
 
+AR (Accounts Receivable) Payment allows users to record and manage payments received from customers in MyxFin. This module ensures that customer payments are accurately reflected in your accounts receivable, helping maintain up-to-date financial records.
+
+---
+
 ![Navigating to AR Payment](/assets/img/arpayment.png)
 ![Navigating to AR Payment](/assets/img/arpayment1.png)
 

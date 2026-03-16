@@ -7,6 +7,10 @@ section: content
 
 # Purchase Request
 
+Purchase Request (PR) in MyxFin allows users to request items or services needed by the business before creating a purchase order. This module helps streamline the procurement process by tracking requests, ensuring that approvals and records are properly managed.
+
+---
+
 ![Navigating to PR](/assets/img/pr.png)
 ![Navigating to PR](/assets/img/pr1.png)
 

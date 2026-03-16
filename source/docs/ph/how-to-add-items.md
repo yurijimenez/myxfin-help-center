@@ -59,6 +59,6 @@ Ang "Items" ay tumutukoy sa mga indibidwal na produkto o kalakal na ibinebenta o
 2. I-click ang **Items**
 3. I-click ang **Master List**
 4. I-click ang **yellow cycle icon** o **Inactive**
-5. I-click ang **green cycle icon** o **Active** para muling i-activate ang item. 
+5. I-click ang green cycle icon o Active para muling i-activate ang item. 
 
 ![Navigating to Banks](/assets/img/item10.png)

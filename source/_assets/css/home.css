@@ -456,6 +456,19 @@
     color: #111;
     transform: translateY(-2px);
 }
+/* Update to handle 3 buttons smoothly */
+.contact-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns to left on desktop, center on mobile via your existing media query */
+}
+
+/* Ensure icons in buttons are consistent */
+.contact-actions a span {
+    font-size: 1.1rem;
+    line-height: 1;
+}
 
 /* ══════════════════════════
    RESPONSIVE

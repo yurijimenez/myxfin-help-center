@@ -8,6 +8,10 @@ section: content
 
 # Units Of Measure
 
+Ang Units of Measure (UOM) sa MyxFin ay ginagamit upang tukuyin at pamahalaan ang mga measurement units para sa inventory items. Nakakatulong ito upang maging consistent ang pag-record ng quantity sa purchases, sales, at stock management.
+
+---
+
 ![Navigating to Uom](/assets/img/uom.png)
 
 ### Paano Gumawa ng Bagong Unit of Measure:

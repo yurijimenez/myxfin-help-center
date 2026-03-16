@@ -7,42 +7,40 @@ section: content
 
 # Chart of Accounts
 
-The Chart of Accounts defines the complete set of financial accounts used by the company to classify, 
-record, and report all accounting transactions.
+Ang Chart of Accounts ay ang kumpletong listahan ng mga financial accounts na ginagamit ng kumpanya para i-classify, i-record, at i-report ang lahat ng accounting transactions.
 
-### How to Create a New Chart of Accounts:
-1. Go to **Master Data Files**
-2. Click **Accounting Parameters**
-3. Click **Chart of Accounts**
-4. Click **Create New (F1)**
-5. Enter the details for the new account. 
-6. Click **Save**
+### Paano Gumawa ng Bagong Chart of Accounts:
+1. Pumunta sa **Master Data Files**
+2. I-click ang **Accounting Parameters**
+3. I-click ang **Chart of Accounts**
+4. I-click ang **Create New (F1)**
+5. Ilagay ang mga detalye para sa bagong account. 
+6. I-click ang **Save**
 
 ---
 
-### Visual Guide
+### Visual na Gabay (Visual Guide)
 
 ![Navigating to Chart of Accounts](/assets/img/coa.png)
-*Figure 1: Locate the Accounting Parameters under Master Data Files.*
+*Figure 1: Hanapin ang Accounting Parameters sa ilalim ng Master Data Files.*
 
 ![Create New Account Interface](/assets/img/coa2.png)
-*Figure 2: The account details entry screen.*
+*Figure 2: Ang screen para sa paglalagay ng detalye ng account.*
 
-> 💡 **Tip:** Remember that you can use the **F1** shortcut key to quickly open the "Create New" window without clicking!
+> 💡 **Tip:** Tandaan na maaari mong gamitin ang **F1** shortcut key para mabilis na mabuksan ang "Create New" window nang hindi na gumagamit ng mouse!
 
-### How to Update a New Chart of Accounts:
+### Paano Mag-update ng Chart of Accounts:
 
-1. Go to **Master Data Files**
-2. Go to **Accounting Parameters** 
-3. Click **Chart of Accounts**
-4. Click blue font text or the Acct No. 
-5. Enter the updated details for the new account. 
-6. Click **Update**
-
+1. Pumunta sa **Master Data Files**
+2. Pumunta sa **Accounting Parameters** 
+3. I-click ang **Chart of Accounts**
+4. I-click ang blue font text o ang Acct No. 
+5. Ilagay ang mga updated na detalye para sa account. 
+6. I-click ang **Update**
 
 ---
 
-### Visual Guide
+### Visual na Gabay (Visual Guide)
 
 ![Navigating to Chart of Accounts](/assets/img/coa3.png)
-*Figure 3: Update an existing Chart Of Account.*
+*Figure 3: Pag-update ng existing na Chart of Account.*

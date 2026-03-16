@@ -30,14 +30,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" rel="stylesheet" />
+    {{-- <link href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" rel="stylesheet" /> --}}
     @viteRefresh()
     <link rel="stylesheet" href="{{ vite('source/_assets/css/main.css') }}">
     <script defer type="module" src="{{ vite('source/_assets/js/main.js') }}"></script>
 
-    @if ($page->docsearchApiKey && $page->docsearchIndexName)
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-    @endif
+    {{-- @if ($page->docsearchApiKey && $page->docsearchIndexName)
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+    @endif --}}
 </head>
 
 <body class="h-screen flex flex-col bg-white text-gray-800 leading-normal overflow-hidden" style="font-family: 'Sora', sans-serif;">
@@ -60,24 +60,34 @@
                         <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
-                <input type="text" id="js-search-input" placeholder="Search..." autocomplete="off" spellcheck="false"
-                    class="w-32 md:w-56 bg-gray-100 border border-gray-300 rounded-md py-1.5 pl-9 pr-3 text-sm focus:outline-none focus:border-[#3b82f6] focus:ring-1 focus:ring-[#3b82f6] transition-all">
-
-                <div id="js-search-results" class="absolute top-full left-0 w-64 md:w-80 bg-white shadow-2xl rounded-md hidden z-[100] mt-2 border border-gray-200 overflow-hidden"></div>
+               <input type="text" id="js-search-input" placeholder="Search..." autocomplete="off" spellcheck="false"
+    class="w-32 md:w-64 bg-white border-2 border-gray-200 rounded-full py-2 pl-10 pr-4 text-sm focus:outline-none focus:border-[#3b82f6] focus:ring-4 focus:ring-blue-100 transition-all shadow-sm">
+              <div id="js-search-results" class="absolute top-full left-0 w-64 md:w-96 bg-white shadow-xl rounded-xl hidden z-[100] mt-3 border border-gray-100 overflow-hidden divide-y divide-gray-50"></div>
             </div>
 
             {{-- Language Dropdown --}}
-            <div class="relative flex items-center">
-                <select id="language-select" class="appearance-none bg-white border border-gray-300 text-gray-700 py-1.5 pl-3 pr-8 rounded-md text-sm cursor-pointer focus:border-[#3b82f6] outline-none">
-                    <option value="en">EN 🇺🇸</option>
-                    <option value="tl">TL 🇵🇭</option>
-                </select>
-                <div class="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none flex items-center">
-                    <svg class="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-            </div>
+          <div class="relative flex items-center group">
+    {{-- Decorative Globe Icon --}}
+    <div class="absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 group-focus-within:text-[#3b82f6] transition-colors">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18" />
+        </svg>
+    </div>
+
+    <select id="language-select" 
+        class="appearance-none bg-gray-50 border border-gray-200 text-gray-700 py-2 pl-9 pr-10 rounded-lg text-sm font-medium cursor-pointer 
+               hover:bg-white hover:border-[#3b82f6] focus:border-[#3b82f6] focus:ring-4 focus:ring-blue-50 outline-none transition-all shadow-sm">
+        <option value="en">English (US)</option>
+        <option value="tl">Tagalog (PH)</option>
+    </select>
+
+    {{-- Custom Arrow Icon --}}
+    <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none flex items-center text-gray-400 group-hover:text-[#3b82f6] transition-colors">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
+</div>
 
             @yield('nav-toggle')
     </header>
@@ -150,32 +160,56 @@
             };
 
             // Start loading the index 500ms after page load
-            setTimeout(loadSearchIndex, 500);
+          setTimeout(loadSearchIndex, 500);
 
-            const performSearch = () => {
-                const searchInput = document.getElementById('js-search-input');
-                const searchResults = document.getElementById('js-search-results');
+const performSearch = () => {
+    const searchInput = document.getElementById('js-search-input');
+    const searchResults = document.getElementById('js-search-results');
 
-                if (!fuse || !searchInput || !searchResults) return;
+    if (!fuse || !searchInput || !searchResults) return;
 
-                const query = searchInput.value.trim();
-                const results = fuse.search(query);
+    const query = searchInput.value.trim();
+    const results = fuse.search(query);
 
-                if (query.length > 1 && results.length > 0) {
-                    searchResults.innerHTML = results.slice(0, 5).map(r => {
-                        const link = r.item.link.startsWith('/') ? r.item.link : '/' + r.item.link;
-                        return `
-                        <a href="${link}" class="block p-4 hover:bg-blue-50 border-b last:border-0 no-underline group transition-colors">
-                            <div class="font-bold text-[#3b82f6] text-sm group-hover:text-[#1d4ed8]">${r.item.title}</div>
-                            <div class="text-[11px] text-gray-500 line-clamp-1 mt-1">${r.item.snippet}</div>
-                        </a>
-                    `;
-                    }).join('');
-                    searchResults.classList.remove('hidden');
-                } else {
-                    searchResults.classList.add('hidden');
-                }
-            };
+    if (query.length > 1 && results.length > 0) {
+        searchResults.innerHTML = results.slice(0, 5).map(r => {
+            const link = r.item.link.startsWith('/') ? r.item.link : '/' + r.item.link;
+
+          
+            // Remove entire image markdown tag
+            let cleanSnippet = r.item.snippet.replace(/!\[.*?\]\((.*?)\)/g, '');
+
+            // Remove loose image/asset paths 
+            cleanSnippet = cleanSnippet.replace(/\/[a-zA-Z0-9._/-]+\.(png|jpg|jpeg|svg|gif|webp)/gi, '');
+
+            // Clean up remaining markdown symbols and double spaces
+            cleanSnippet = cleanSnippet.replace(/[#*!\[\]\(\)]+/g, '')
+                                       .replace(/\\r|\\n/g, ' ')
+                                       .replace(/\s\s+/g, ' ');
+        
+
+            return `
+                <a href="${link}" class="block p-4 hover:bg-blue-50 no-underline group transition-all">
+                    <div class="flex items-center justify-between">
+                        <div class="font-bold text-[#3b82f6] text-sm group-hover:text-[#1d4ed8]">
+                            ${r.item.title.replace('#', '').trim()}
+                        </div>
+                        <svg class="h-3 w-3 text-gray-300 group-hover:text-[#3b82f6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="text-[12px] text-gray-500 line-clamp-2 mt-1 font-normal leading-relaxed">
+                        ${cleanSnippet.trim()}
+                    </div>
+                </a>
+            `;
+        }).join('');
+        
+        searchResults.classList.remove('hidden');
+    } else {
+        searchResults.classList.add('hidden');
+    }
+};
 
             // Event delegation for input to match your js-search-input ID
             document.addEventListener('input', (e) => {
@@ -194,43 +228,55 @@
             });
         })();
 
-        /** * SIDEBAR & LANGUAGE LOGIC 
+       /** * SIDEBAR & LANGUAGE LOGIC 
          */
         document.addEventListener('DOMContentLoaded', function() {
             // --- 1. SIDEBAR MENU INITIAL STATE ---
-            const openMenus = document.querySelectorAll('.child-menu:not(.hidden)');
-            openMenus.forEach(menu => {
-                menu.style.display = 'block';
-                const toggle = menu.previousElementSibling;
-                if (toggle && toggle.classList.contains('js-menu-toggle')) {
-                    const arrow = toggle.querySelector('svg');
-                    if (arrow) {
-                        arrow.style.transform = 'rotate(180deg)';
-                        arrow.style.transition = 'none';
+            // We use an array to store multiple open levels (Master Files > Item Brand)
+            const savedState = localStorage.getItem('myxfin_sidebar_state');
+            const allToggles = document.querySelectorAll('.js-menu-toggle');
+
+            if (savedState) {
+                const openIndexes = JSON.parse(savedState);
+                openIndexes.forEach(index => {
+                    const activeToggle = allToggles[index];
+                    if (activeToggle) {
+                        const activeMenu = activeToggle.nextElementSibling;
+                        if (activeMenu && activeMenu.classList.contains('child-menu')) {
+                            activeMenu.classList.remove('hidden');
+                            activeMenu.style.display = 'block';
+                            const arrow = activeToggle.querySelector('svg');
+                            if (arrow) arrow.style.transform = 'rotate(180deg)';
+                        }
                     }
-                }
-            });
+                });
+            } else {
+                // Fallback for first-time load
+                const openMenus = document.querySelectorAll('.child-menu:not(.hidden)');
+                openMenus.forEach(menu => {
+                    menu.style.display = 'block';
+                    const toggle = menu.previousElementSibling;
+                    if (toggle && toggle.classList.contains('js-menu-toggle')) {
+                        const arrow = toggle.querySelector('svg');
+                        if (arrow) arrow.style.transform = 'rotate(180deg)';
+                    }
+                });
+            }
 
             // --- 2. LANGUAGE DROPDOWN LOGIC ---
             const langSelect = document.getElementById('language-select');
             if (langSelect) {
                 const savedLang = localStorage.getItem('myxfin_lang');
-                if (savedLang) {
-                    langSelect.value = savedLang;
-                }
+                if (savedLang) langSelect.value = savedLang;
 
                 langSelect.addEventListener('change', function() {
                     localStorage.setItem('myxfin_lang', this.value);
-
                     let currentPath = window.location.pathname;
-
                     if (this.value === 'tl') {
-                        // If we are NOT already in the ph folder, add /ph/ to the path
                         if (!currentPath.includes('/docs/ph/')) {
                             window.location.href = currentPath.replace('/docs/', '/docs/ph/');
                         }
                     } else {
-                        // If we are in the ph folder, remove it to go back to English
                         if (currentPath.includes('/docs/ph/')) {
                             window.location.href = currentPath.replace('/docs/ph/', '/docs/');
                         }
@@ -246,17 +292,27 @@
             if (!toggle) return;
 
             e.preventDefault();
+            const allToggles = Array.from(document.querySelectorAll('.js-menu-toggle'));
             const parentLi = toggle.closest('li');
             const currentChildMenu = parentLi.querySelector('.child-menu');
 
             if (currentChildMenu) {
                 const isOpening = currentChildMenu.classList.contains('hidden');
 
-                if (isOpening) {
-                    const parentUl = parentLi.closest('ul');
-                    const siblingMenus = parentUl.querySelectorAll(':scope > li > .child-menu');
+                // Toggle visibility
+                currentChildMenu.classList.toggle('hidden');
+                currentChildMenu.style.display = isOpening ? 'block' : 'none';
 
-                    siblingMenus.forEach(menu => {
+                const arrow = toggle.querySelector('svg');
+                if (arrow) {
+                    arrow.style.transition = 'transform 0.2s ease';
+                    arrow.style.transform = isOpening ? 'rotate(180deg)' : 'rotate(0deg)';
+                }
+
+                if (isOpening && !toggle.closest('.child-menu')) {
+                    const topLevelUl = toggle.closest('ul');
+                    const topLevelMenus = topLevelUl.querySelectorAll(':scope > li > .child-menu');
+                    topLevelMenus.forEach(menu => {
                         if (menu !== currentChildMenu) {
                             menu.classList.add('hidden');
                             menu.style.display = 'none';
@@ -269,14 +325,15 @@
                     });
                 }
 
-                const isNowHidden = currentChildMenu.classList.toggle('hidden');
-                currentChildMenu.style.display = isNowHidden ? 'none' : 'block';
-
-                const arrow = toggle.querySelector('svg');
-                if (arrow) {
-                    arrow.style.transition = 'transform 0.2s ease';
-                    arrow.style.transform = isNowHidden ? 'rotate(0deg)' : 'rotate(180deg)';
-                }
+                // SAVE STATE: Find every menu that is currently visible and save its index
+                const openIndexes = [];
+                allToggles.forEach((t, index) => {
+                    const m = t.nextElementSibling;
+                    if (m && m.style.display === 'block') {
+                        openIndexes.push(index);
+                    }
+                });
+                localStorage.setItem('myxfin_sidebar_state', JSON.stringify(openIndexes));
             }
         });
     </script>

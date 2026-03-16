@@ -7,6 +7,10 @@ section: content
 
 # Purchase Order
 
+Purchase Order (PO) in MyxFin allows users to create and manage orders for goods or services from suppliers. This module ensures that purchases are properly documented, tracked, and aligned with approvals and payments.
+
+---
+
 ![Navigating to PO](/assets/img/po.png)
 
 > 💡 **Take note:** Only transactions without reference or with cancelled reference receiving or APV will be available for unposting. 

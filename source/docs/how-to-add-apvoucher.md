@@ -6,6 +6,9 @@ section: content
 ---
 
 # AP Voucher
+AP Voucher (Accounts Payable Voucher) is used to record and manage payments to vendors in MyxFin. This feature allows users to create new vouchers, track payments, and adjust or void transactions as needed. AP Vouchers help ensure that all vendor-related payments are properly documented and that accounts payable records are accurate.
+
+---
 
 ![Navigating to AP Voucher](/assets/img/apvouch.png) 
 ![Navigating to AP Voucher](/assets/img/apvouch1.png) 

@@ -83,7 +83,7 @@ return [
             'How to add Purchase Request' => 'docs/how-to-add-pr',
             'How to add Purchase Order' => 'docs/how-to-add-po',
             'How to add Purchase Receiving' => 'docs/how-to-add-purchreceiving',
-            'How to add Purchase Return' => 'docs/how-to-add-purchase-order',
+            'How to add Purchase Return' => 'docs/how-to-add-purchret',
         ],
     ],
     'Accounting' => [
@@ -103,7 +103,7 @@ return [
     'url' => '#',
     'icon' => 'bank-icon', 
     'children' => [
-        'How to add Suppliers Invoice' => 'docs/how-to-add-bank-deposit',
+        'How to add Suppliers Invoice' => 'docs/how-to-add-suppinvoice',
         'How to add Adjustments' => 'docs/how-to-make-apadjust',
         'How to add AP Voucher' => 'docs/how-to-add-apvoucher',
         'How to add Bills Payment' => 'docs/how-to-add-billspayment',
@@ -116,8 +116,8 @@ return [
         'url' => '#',
         'children' => [
             'How to add Inventory Count' => 'docs/how-to-add-inventorycount',
-            'How to add Inventory Transfer' => 'docs/how-to-add-purchase-order',
-            'How to add Inventory Adjustment' => 'docs/how-to-add-purchase-order',
+            'How to add Inventory Transfer' => 'docs/how-to-add-inventransfer',
+            'How to add Inventory Adjustment' => 'docs/how-to-add-inventadjust',
         ],
         ],
         'Reports' => [

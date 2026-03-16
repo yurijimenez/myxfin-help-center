@@ -15,7 +15,7 @@ section: content
 2. Click **System Settings** 
 3. Go to **Parameters Tab** 
 4. Under Suppliers Groupings Enter the label for each group you needed. 
-5. Press **Enter** after you type the label, a check mark will appear beside the Group to indicate that the change is saved. 
+5. Press Enter after you type the label, a check mark will appear beside the Group to indicate that the change is saved. 
 
 ![Navigating to SupplierGroup](/assets/img/suppgroup.png) 
 
