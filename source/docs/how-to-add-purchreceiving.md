@@ -9,7 +9,7 @@ section: content
 
 ![Navigating to PRec](/assets/img/purchrec.png)
 
-> 💡 **Take note:**Only transactions without reference or with cancelled reference to Suppliers Invoice or Purchase Return will be available for un-posting. 
+> 💡 **Take note:** Only transactions without reference or with cancelled reference to Suppliers Invoice or Purchase Return will be available for un-posting. 
 
 ---
 

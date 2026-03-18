@@ -42,6 +42,6 @@ Ang Payment Terms ay nagtatakda ng mga kondisyon sa pagbabayad na ginagamit sa m
 3. I-click ang **Payment Terms**
 4. I-click ang **yellow cycle icon** o ang **Inactive** button.
 
-* I-click naman ang **green cycle icon** o ang **Active** button para muling i-activate ang item.
+I-click naman ang **green cycle icon** o ang **Active** button para muling i-activate ang item.
 
 ![Navigating to Payment Term](/assets/img/npayment2.png)

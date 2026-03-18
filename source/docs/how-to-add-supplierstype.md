@@ -7,6 +7,10 @@ section: content
 
 # Suppliers Type
 
+Suppliers Type allows users to classify suppliers based on their category or business role. This helps organize supplier records, making it easier to manage transactions, purchasing activities, and reporting within the system.
+
+---
+
 ### How to Add New Suppliers Type:
 
 1. Go to **Master Data** Files. 

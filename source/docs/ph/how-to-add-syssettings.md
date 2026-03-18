@@ -13,11 +13,11 @@ Ang **"system setup"** ay tumutukoy sa proseso ng pag-configure at pag-customize
 
 ### Paano I-setup o I-update ang Impormasyon ng Kumpanya:
 
-1. Pumunta sa **Master Data Files**.
-2. I-click ang **System Setup**.
-3. I-click ang **Company Details**.
+1. Pumunta sa **Master Data Files**
+2. I-click ang **System Setup**
+3. I-click ang **Company Details**
 4. Ilagay ang impormasyon ng kumpanya. 
-5. I-click ang **Save Company Details**. 
+5. I-click ang **Save Company Details**
 
 ![Navigating to System Settings](/assets/img/sysettings.png)
 
@@ -27,9 +27,9 @@ Ang **"system setup"** ay tumutukoy sa proseso ng pag-configure at pag-customize
 
 Ang functionality na ito ay sumusunod sa mga requirement ng **BIR CAS** pagdating sa serial numbering ng mga receipt at invoice, kabilang ang paggamit ng hindi bababa sa anim (6) na digit na may leading zeroes at malinaw na numbering convention.
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **Document Serial Numbers**.
-3. I-click ang **Start New Year**. 
+1. Pumunta sa **Master Data Files** 
+2. I-click ang **Document Serial Numbers**
+3. I-click ang **Start New Year**
 4. I-edit ang mga serial numbering ayon sa kinakailangan. 
 
 ![Navigating to System Settings](/assets/img/sysettings1.png)
@@ -40,9 +40,9 @@ Ang functionality na ito ay sumusunod sa mga requirement ng **BIR CAS** pagdatin
 
 ### Paano I-setup ang Base Currency:
 
-1. Pumunta sa **Master Data Files**.  
-2. I-click ang **System Setup**.
-3. I-click ang **Parameters**. 
+1. Pumunta sa **Master Data Files** 
+2. I-click ang **System Setup**
+3. I-click ang **Parameters**
 4. Piliin ang **Automatic** o **Manual** mula sa drop-down options.
 
 ![Navigating to System Settings](/assets/img/sysettings2.png)
@@ -51,9 +51,9 @@ Ang functionality na ito ay sumusunod sa mga requirement ng **BIR CAS** pagdatin
 
 ### Paano Magdagdag/Mag-update ng Contact Details Custom Field:
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **System Setup**. 
-3. I-click ang **Parameters**.
+1. Pumunta sa **Master Data Files** 
+2. I-click ang **System Setup**
+3. I-click ang **Parameters**
 4. I-click ang **Add** upang magdagdag ng bagong field o i-edit ang Description ng kasalukuyang field. 
 5. I-click ang **Save Contact Details** upang i-save ang mga pagbabago. 
 

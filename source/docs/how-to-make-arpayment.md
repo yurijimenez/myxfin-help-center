@@ -12,7 +12,6 @@ AR (Accounts Receivable) Payment allows users to record and manage payments rece
 ---
 
 ![Navigating to AR Payment](/assets/img/arpayment.png)
-![Navigating to AR Payment](/assets/img/arpayment1.png)
 
 > 💡 **Take note:** Only transactions without reference or with cancelled reference to Deposits will be available for unposting. 
 

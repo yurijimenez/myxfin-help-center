@@ -1,99 +1,109 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
 @import "tailwindcss";
 
-/* ── BASE ── */
+/* ── BASE SIDEBAR ── */
 .sidebar-myxfin {
-    background-color: #3f63a3; 
-    color: white;
+    background-color: #4276a4; 
+    color: #ffffff;
     min-height: 100vh;
+    width: 280px; 
     font-family: 'Sora', sans-serif;
-    font-size: 0.9375rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    overflow-x: hidden; /* Prevents horizontal squishing */
+    overflow-y: auto;
 }
 
-/* ── LINKS & TOGGLES ── */
+/* ── CUSTOM SCROLLBAR ── */
+.sidebar-myxfin::-webkit-scrollbar { width: 6px; }
+.sidebar-myxfin::-webkit-scrollbar-thumb { 
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 10px; 
+}
+
+/* ── ALL LINKS & TOGGLES ── */
 .sidebar-myxfin a,
 .js-menu-toggle {
-    font-family: 'Sora', sans-serif;
-    font-size: 0.9375rem;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.85);
-    text-decoration: none;
-    padding: 0.55rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    background: transparent;
+    text-decoration: none;
     border: none;
     cursor: pointer;
-    text-align: left;
-    border-radius: 6px;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    margin: 0.2rem 0.75rem;
+    width: auto; /* Let it fill the available space */
+    box-sizing: border-box;
 }
 
-/* Chevron sits naturally to the right via justify-content: space-between */
-.js-menu-toggle svg,
-.js-menu-toggle .chevron {
-    flex-shrink: 0;
-    margin-left: auto;
-    transition: transform 0.2s ease;
-}
-.js-menu-toggle.is-open svg,
-.js-menu-toggle.is-open .chevron {
-    transform: rotate(180deg);
+/* ── LEVEL 1 ── */
+.sidebar-myxfin > div > .js-menu-toggle,
+.sidebar-myxfin > div > a {
+    font-size: 0.85rem;
+    font-weight: 700; 
+    text-transform: uppercase;
+    padding: 0.8rem 1rem;
 }
 
-/* ── SUB-MENU ── */
+/* ── THE SUB-MENU FIX ── */
 .child-menu {
-    width: 100%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.15);
+    background: transparent !important;
+    /* This is the key: only indent the VERY FIRST level of child menu */
+    margin-left: 1.25rem; 
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 0; 
 }
 
-.child-menu a {
+/* ── PREVENT DEEP NESTING FROM STACKING ── */
+/* If a child-menu is inside another child-menu, reset the margin */
+.child-menu .child-menu {
+    margin-left: 0.75rem; /* Smaller indent for level 3 */
+    margin-right: 0;
+}
+
+/* ── LINKS INSIDE DROPDOWNS ── */
+.child-menu a,
+.child-menu .js-menu-toggle {
+    text-transform: none; 
+    font-weight: 500;
     font-size: 0.875rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.75);
-    padding: 0.48rem 1rem 0.48rem 1.75rem;
-    justify-content: flex-start;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.6rem 0.8rem;
+    /* Force text to stay on one line if possible, or wrap normally */
+    line-height: 1.4;
+    white-space: normal; 
 }
 
-/* ── UTILITY ── */
-.hidden { display: none !important; }
-.rotate-180 { transform: rotate(180deg); }
-
-/* ── HOVER ── */
+/* ── HOVER & ACTIVE ── */
 .sidebar-myxfin a:hover,
 .js-menu-toggle:hover {
-    background-color: rgba(0, 0, 0, 0.12);
-    color: #ffffff;
-    transition: background-color 0.18s ease, color 0.18s ease;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.child-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.12);
-    color: #ffffff;
-}
-
-/* ── ACTIVE ── */
 .sidebar-myxfin a.active,
 .sidebar-myxfin a[aria-current="page"] {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-    font-weight: 600;
-    border-radius: 6px;
+    background-color: #ffffff !important;
+    color: #4276a4 !important;
+    font-weight: 700;
+}
+
+/* ── CHEVRON ── */
+.js-menu-toggle svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0; /* STOP the icon from disappearing/shrinking */
+    margin-left: 8px;
 }
 
 
 
 
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
 /*For the content of the sidebars*/
 :root {
-    --blue:      #3b82f6;
+    --blue:      #4276a4;
     --blue-dark: #1d4ed8;
     --blue-head: #103a96;
     --blue-sub:  #3b68b1;
@@ -483,6 +493,9 @@
     max-width: 850px;
     margin: 0 auto;
 }
+.faq-container h1 {
+    color: #3b82f6 !important;
+}
 
 .faq-item {
     background: #ffffff;
@@ -494,7 +507,7 @@
 
 .faq-item:hover {
     border-color: #3b82f6;
-    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(66, 132, 238, 0.1);
 }
 
 .faq-question {
@@ -533,5 +546,7 @@
     max-height: 500px; /* Large enough for long answers */
     padding: 0 1.25rem 1.25rem 1.25rem;
 }
+/* This targets the text inside the question buttons */
+
 
 

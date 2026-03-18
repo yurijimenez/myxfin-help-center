@@ -11,13 +11,13 @@ Ang inventory adjustment sa isang sales at inventory system ay tumutukoy sa pros
 
 ### Paano Magdagdag ng Bagong Inventory Adjustment: 
 
-1. Pumunta sa **Inventory**.
-2. I-click ang **Inventory Adjustment**.
-3. I-click ang **Create New (F1)**.
+1. Pumunta sa **Inventory**
+2. I-click ang **Inventory Adjustment**
+3. I-click ang **Create New (F1)**
 4. Ilagay ang Section, Adjustment Type, Remarks, at Adjustment Date. 
-5. Pumili ng **item**. 
-6. Ilagay ang bilang sa **Actual Qty**.  
-7. I-click ang **Save (CTRL+S)**. 
+5. Pumili ng **item**
+6. Ilagay ang bilang sa **Actual Qty**  
+7. I-click ang **Save (CTRL+S)**
 
 ![Navigating to Inventory Adjustment](/assets/img/inventadjust.png)
 
@@ -25,14 +25,14 @@ Ang inventory adjustment sa isang sales at inventory system ay tumutukoy sa pros
 
 ### Paano Mag-update ng Inventory Adjustment:
   
-1. Pumunta sa **Inventory**.
-2. I-click ang **Inventory Adjustment**. 
+1. Pumunta sa **Inventory**
+2. I-click ang **Inventory Adjustment**
 3. Piliin at i-click ang Transaction Code. 
-4. I-click ang **Edit (CTRL+E)**.
+4. I-click ang **Edit (CTRL+E)**
 5. Ilagay ang mga bagong detalye para sa Section, Adjustment Type, Remarks, at Inventory Date. 
 6. Maaari ka ring magdagdag ng isa pang item. Ilagay ang Item Code o Description. 
 7. Ilagay ang bagong Actual Qty ng item. 
-8. I-click ang **Save (CTRL+S)**.
+8. I-click ang **Save (CTRL+S)**
 
 > ✔️ Ang mga **Posted** Inventory Adjustment ay hindi na maaaring i-update.  
 

@@ -7,6 +7,10 @@ section: content
 
 # Suppliers
 
+The Suppliers module in MyxFin allows users to manage vendor information efficiently. Users can create new suppliers, update existing supplier details, or inactivate suppliers who are no longer active. This ensures that your accounts payable and purchasing records are accurate and up-to-date.
+
+---
+
 ### How to Create a New Suppliers:
 
 1. Go to **Master Data** Files. 

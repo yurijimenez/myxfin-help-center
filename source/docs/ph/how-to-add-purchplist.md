@@ -13,14 +13,14 @@ Ang Purchase Price List ay nagsisilbing reference o initial purchase price ng mg
 
 ### Paano Magdagdag ng Bagong Price Matrix (Purchase Pricelist):
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **Price List**.
-3. I-click ang **Purchase Pricelist**.
-4. I-click ang **Create New (F1)**.
+1. Pumunta sa **Master Data Files**
+2. I-click ang **Price List**
+3. I-click ang **Purchase Pricelist**
+4. I-click ang **Create New (F1)**
 5. Ilagay ang Supplier, Description, at Effectivity Date. 
 6. Ilagay ang product code o description. 
 7. Ilagay ang halaga (amount) ng presyo. 
-8. I-click ang **Save (F2)**.
+8. I-click ang **Save (F2)**
 
 * I-click ang **delete** para tanggalin ang item. 
 
@@ -30,13 +30,13 @@ Ang Purchase Price List ay nagsisilbing reference o initial purchase price ng mg
 
 ### Paano Mag-update ng Purchase Price List:
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **Price List**.
-3. I-click ang **Purchase Pricelist**.
+1. Pumunta sa **Master Data Files** 
+2. I-click ang **Price List**
+3. I-click ang **Purchase Pricelist**
 4. Piliin ang PM Batch No. at i-click ang blue text icon. 
-5. I-click ang **Edit**.
+5. I-click ang **Edit**
 6. Ilagay ang mga bagong detalye ng price matrix. 
-7. I-click ang **Save (CTRL+S)**.
+7. I-click ang **Save (CTRL+S)**
 
 ![Navigating to Pplist](/assets/img/purchplist1.png)
 ![Navigating to Pplist](/assets/img/purchplist2.png)

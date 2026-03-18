@@ -11,13 +11,13 @@ Ang inventory count, na madalas ding tawaging "inventory counting" o "stock coun
 
 ### Paano Magdagdag ng Bagong Inventory Count:
 
-1. Pumunta sa **Inventory**.
-2. I-click ang **Inventory Count**.
-3. I-click ang **Create New (F1)**. 
+1. Pumunta sa **Inventory**
+2. I-click ang **Inventory Count**
+3. I-click ang **Create New (F1)**
 4. Ilagay ang Section, Counting Type, Remarks, Template, at Inventory Date. 
 5. Ilagay ang Item Code o Description. 
 6. Ilagay ang Qty (Quantity) ng item.  
-7. I-click ang **Save (CTRL+S)**.
+7. I-click ang **Save (CTRL+S)**
 8. Pagkatapos i-save, siguraduhing i-**Post** ang Inventory Count. 
 
 ![Navigating to Inventory count](/assets/img/inventc.png)
@@ -26,14 +26,14 @@ Ang inventory count, na madalas ding tawaging "inventory counting" o "stock coun
 
 ### Paano Mag-update ng Inventory Count:
 
-1. Pumunta sa **Inventory**.
-2. I-click ang **Inventory Count**. 
-3. Piliin at i-click ang **Transaction Code**.
-4. I-click ang **Edit (CTRL+E)**.
+1. Pumunta sa **Inventory**
+2. I-click ang **Inventory Count** 
+3. Piliin at i-click ang **Transaction Code**
+4. I-click ang **Edit (CTRL+E)**
 5. Ilagay ang mga bagong detalye para sa Counting Type, Remarks, at Inventory Date. 
 6. Maaari ka ring magdagdag ng isa pang item. Ilagay ang Item Code o Description. 
 7. Ilagay ang bagong Qty (Quantity) ng item. 
-8. I-click ang **Save (CTRL+S)**. 
+8. I-click ang **Save (CTRL+S)**
 
 > ✔️ Ang mga **Posted** Inventory Count ay hindi na maaaring i-update.
 
@@ -45,22 +45,22 @@ Ang inventory count, na madalas ding tawaging "inventory counting" o "stock coun
 
 ### Paano Magdagdag ng Bagong Template sa Inventory Count:
 
-1. Pumunta sa **Inventory**. 
-2. I-click ang **Inventory Count**. 
-3. I-click ang **Template**. 
+1. Pumunta sa **Inventory**
+2. I-click ang **Inventory Count**
+3. I-click ang **Template**
 4. Piliin ang Section, New Template, at ilagay ang pangalan ng bagong template. 
 5. Pumili ng item. 
-6. I-click ang **Save (CTRL+S)**. 
+6. I-click ang **Save (CTRL+S)**
 
 ![Navigating to Inventory count](/assets/img/inventc3.png)
 
 ### Paano Mag-update ng Template sa Inventory Count:
 
-1. Pumunta sa **Inventory**. 
-2. I-click ang **Inventory Count**. 
-3. I-click ang **Template**. 
+1. Pumunta sa **Inventory**
+2. I-click ang **Inventory Count**
+3. I-click ang **Template**
 4. Piliin ang Section kung saan mo gustong i-update ang template. Pagkatapos ay piliin ang nagawang template. 
 5. Pumili ng bagong item na isasama sa template na ito. 
-6. I-click ang **Save (CTRL+S)**. 
+6. I-click ang **Save (CTRL+S)**
 
 ![Navigating to Inventory count](/assets/img/inventc4.png)

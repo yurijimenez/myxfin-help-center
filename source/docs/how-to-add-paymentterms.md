@@ -35,13 +35,13 @@ Payment Terms define the payment conditions applied to customer and supplier tra
 
 ---
 
-### How to Inactive Classification:
+### How to Inactive the Payment Terms
 
 1. Go to **Master Data** Files. 
-2. Click **Suppliers** 
-3. Click **Classification**
-4. Click the **yellow cycle** icon or **Inactive**
+2. Click **Accounting Parameters** 
+3. Click **Payment Terms** 
+4. Click the **yellow cycle** icon or **Inactive** 
 
-a. Click the **green cycle** icon or **Active** to activate the item.  
+o Click the **green cycle** icon or **Active** to activate the item  
 
-![Navigating to SupplierClass](/assets/img/suppclass2.png) 
+![Navigating to Payment Term](/assets/img/npayment2.png) 

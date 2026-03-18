@@ -16,8 +16,8 @@ currency usage across sales, purchasing, and accounting modules.
 
 1. Go to **Master Data** Files. 
 2. Click **Accounting Parameters** 
-3. Click **Currency List**. 
-4. Click **Create New (F1)**. 
+3. Click **Currency List**
+4. Click **Create New (F1)**
 5. Enter the details of the new currency. 
 6. Click **Add Detail**  
 
@@ -30,7 +30,7 @@ currency usage across sales, purchasing, and accounting modules.
 
 1. Go to **Master Data** Files. 
 2. Click **Accounting Parameters** 
-3. Click **Currency List**. 
+3. Click **Currency List**
 4. Select a currency and**click**the blue font text or Currency Code. 
 5. Enter the new details of the currency. 
 6. Click **Update** Detail 
@@ -43,7 +43,7 @@ currency usage across sales, purchasing, and accounting modules.
 
 1. Go to **Master Data** Files. 
 2. Click **Accounting Parameters** 
-3. Click **Currency List**. 
-4. Click the **yellow cycle** icon or **Inactive**.
+3. Click **Currency List**
+4. Click the **yellow cycle** icon or **Inactive**
 
 o Click the green cycle icon or Active to activate the item. 

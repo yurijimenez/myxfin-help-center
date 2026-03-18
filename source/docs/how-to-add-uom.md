@@ -7,6 +7,10 @@ section: content
 
 # Units Of Measure
 
+The Units of Measure (UOM) module in MyxFin allows users to define and manage measurement units for inventory items. This ensures consistency when recording quantities for purchases, sales, and stock management.
+
+---
+
 ![Navigating to Uom](/assets/img/uom.png)
 
 ### How to Create a New Unit of Measure:

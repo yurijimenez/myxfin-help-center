@@ -15,12 +15,12 @@ Ang A/P Proforma List ay nagsisilbing reference template para sa mga A/P Voucher
 
 ### Paano Gumawa ng Bagong A/P Proforma:
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **Accounting Parameters**.
-3. I-click ang **A/P Proforma List**.
-4. I-click ang **Create New (F1)**. 
+1. Pumunta sa **Master Data Files**
+2. I-click ang **Accounting Parameters**
+3. I-click ang **A/P Proforma List**
+4. I-click ang **Create New (F1)**
 5. Ilagay ang mga detalye ng A/P Proforma. 
-6. I-click ang **Save**.
+6. I-click ang **Save**
 
 ![Navigating to AP Proforma](/assets/img/approforma.png) 
 
@@ -28,12 +28,12 @@ Ang A/P Proforma List ay nagsisilbing reference template para sa mga A/P Voucher
 
 ### Paano Mag-update ng A/P Proforma:
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **Accounting Parameters**.
-3. I-click ang **A/P Proforma List**.
-4. I-click ang **yellow button**.
+1. Pumunta sa **Master Data Files**
+2. I-click ang **Accounting Parameters**
+3. I-click ang **A/P Proforma List**
+4. I-click ang **yellow button**
 5. I-update ang mga detalye ng A/P Proforma. 
-6. I-click ang **Update**.
+6. I-click ang **Update**
 
 ![Navigating to AP Proforma](/assets/img/approforma1.png) 
 
@@ -41,11 +41,11 @@ Ang A/P Proforma List ay nagsisilbing reference template para sa mga A/P Voucher
 
 ### Paano Gawing Inactive ang A/P Proforma:
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **Accounting Parameters**.
-3. I-click ang **A/P Proforma**. 
+1. Pumunta sa **Master Data Files**
+2. I-click ang **Accounting Parameters**
+3. I-click ang **A/P Proforma**
 4. I-click ang **yellow cycle icon** o ang **Inactive** button.
 
-* I-click naman ang **green cycle icon** o ang **Active** button para muling i-activate ang item. 
+I-click naman ang **green cycle icon** o ang **Active** button para muling i-activate ang item. 
 
 ![Navigating to AP Proforma](/assets/img/approforma2.png)

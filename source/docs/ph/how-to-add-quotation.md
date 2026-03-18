@@ -25,11 +25,11 @@ section: content
 
 > ✔️ Maaari mong i-edit ang isang transaksyon hangga't hindi pa ito naka-post o cancelled.
 
-1. Pumunta sa **Sales & Delivery**. 
-2. I-click ang **Sales Order**. 
-4. I-click ang **Create New (F1)**. 
+1. Pumunta sa **Sales & Delivery** 
+2. I-click ang **Sales Order**
+4. I-click ang **Create New (F1)** 
 5. Ilagay ang mga detalye ng bagong transaksyon. 
-6. I-click ang **Save (CTRL+S)**.
+6. I-click ang **Save (CTRL+S)**
 
 ![Navigating to Quotation](/assets/img/quotation4.png)
 
@@ -41,7 +41,7 @@ section: content
 
 ![Navigating to Quotation](/assets/img/quotation6.png)
 
-**Lagyan ng check** ang mga transaksyong kailangang aprubahan at i-click ang **Approve Transaction**.
+**Lagyan ng check** ang mga transaksyong kailangang aprubahan at i-click ang **Approve Transaction**
 
 **Recurring Transactions** – Ang mga recurring transaction ay ginagamit upang awtomatikong makagawa ng maraming transaksyon nang sabay-sabay. Nakakatipid ito sa oras sa pamamagitan ng pag-automate ng mga rutinang pag-encode na kailangang gawin nang tuloy-tuloy base sa piniling recur type.
 

@@ -33,6 +33,6 @@ Ang **Purchase Request (PR)** sa MyxFin ay nagbibigay-daan sa mga user na humili
 ![Pag-navigate sa PR](/assets/img/pr5.png)
 
 1. I-click ang **Undo Edit** na button para ikansela ang pag-edit.
-2. Kapag ang form ay nasa editing mode, ma-aactivate ang **Save button**.
+2. Kapag ang form ay nasa editing mode, ma-aactivate ang **Save button**
 
 ---

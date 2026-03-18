@@ -60,40 +60,40 @@
                         <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
-               <input type="text" id="js-search-input" placeholder="Search..." autocomplete="off" spellcheck="false"
-    class="w-32 md:w-64 bg-white border-2 border-gray-200 rounded-full py-2 pl-10 pr-4 text-sm focus:outline-none focus:border-[#3b82f6] focus:ring-4 focus:ring-blue-100 transition-all shadow-sm">
-              <div id="js-search-results" class="absolute top-full left-0 w-64 md:w-96 bg-white shadow-xl rounded-xl hidden z-[100] mt-3 border border-gray-100 overflow-hidden divide-y divide-gray-50"></div>
+                <input type="text" id="js-search-input" placeholder="Search..." autocomplete="off" spellcheck="false"
+                    class="w-32 md:w-64 bg-white border-2 border-gray-200 rounded-full py-2 pl-10 pr-4 text-sm focus:outline-none focus:border-[#3b82f6] focus:ring-4 focus:ring-blue-100 transition-all shadow-sm">
+                <div id="js-search-results" class="absolute top-full left-0 w-64 md:w-96 bg-white shadow-xl rounded-xl hidden z-[100] mt-3 border border-gray-100 overflow-hidden divide-y divide-gray-50"></div>
             </div>
 
             {{-- Language Dropdown --}}
-          <div class="relative flex items-center group">
-    {{-- Decorative Globe Icon --}}
-    <div class="absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 group-focus-within:text-[#3b82f6] transition-colors">
-        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18" />
-        </svg>
-    </div>
+            <div class="relative flex items-center group">
+                {{-- Decorative Globe Icon --}}
+                <div class="absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 group-focus-within:text-[#3b82f6] transition-colors">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18" />
+                    </svg>
+                </div>
 
-    <select id="language-select" 
-        class="appearance-none bg-gray-50 border border-gray-200 text-gray-700 py-2 pl-9 pr-10 rounded-lg text-sm font-medium cursor-pointer 
+                <select id="language-select"
+                    class="appearance-none bg-gray-50 border border-gray-200 text-gray-700 py-2 pl-9 pr-10 rounded-lg text-sm font-medium cursor-pointer 
                hover:bg-white hover:border-[#3b82f6] focus:border-[#3b82f6] focus:ring-4 focus:ring-blue-50 outline-none transition-all shadow-sm">
-        <option value="en">English (US)</option>
-        <option value="tl">Tagalog (PH)</option>
-    </select>
+                    <option value="en">English (US)</option>
+                    <option value="tl">Tagalog (PH)</option>
+                </select>
 
-    {{-- Custom Arrow Icon --}}
-    <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none flex items-center text-gray-400 group-hover:text-[#3b82f6] transition-colors">
-        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    </div>
-</div>
+                {{-- Custom Arrow Icon --}}
+                <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none flex items-center text-gray-400 group-hover:text-[#3b82f6] transition-colors">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 9l-7 7-7-7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
 
             @yield('nav-toggle')
     </header>
 
     <main class="flex flex-1 overflow-hidden">
-        <nav class="w-64 sidebar-myxfin shrink-0 overflow-y-auto border-r">
+       <nav class="w-64 sidebar-myxfin shrink-0 overflow-y-auto border-none">
             @include('_nav.menu', ['items' => $page->navigation])
         </nav>
 
@@ -102,17 +102,13 @@
                 @yield('body')
             </div>
 
-            <footer class="bg-white text-center text-sm py-6 border-t">
-                <ul class="flex flex-col md:flex-row justify-center list-none p-0 m-0">
-                    <li class="md:mr-2">
-                        &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> {{ date('Y') }}.
-                    </li>
-                    <li>
-                        Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
-                        and <a href="https://tailwindcss.com" title="Tailwind CSS">Tailwind CSS</a>.
-                    </li>
-                </ul>
-            </footer>
+           <footer class="bg-white border-t border-gray-100 py-6 mt-12">
+    <div class="container mx-auto px-6 text-center">
+        <p class="font-sora text-xs font-medium text-gray-400 tracking-wide">
+            © 2026 MyxFin. All rights reserved.
+        </p>
+    </div>
+</footer>
         </section>
     </main>
 
@@ -126,69 +122,67 @@
     @stack('scripts')
 
     <script>
-        /** * SEARCH LOGIC (Fuse.js) 
-         */
-        (function() {
-            let fuse = null;
+    /** * SEARCH LOGIC (Fuse.js) 
+     */
+    (function() {
+        let fuse = null;
 
-            const loadSearchIndex = (retries = 5) => {
-                const v = Date.now();
-                fetch('/index.json?v=' + v)
-                    .then(response => {
-                        if (!response.ok) throw new Error("HTTP " + response.status);
-                        return response.json();
-                    })
-                    .then(data => {
-                        if (data && data.length > 0) {
-                            fuse = new Fuse(data, {
-                                keys: ['title', 'snippet'],
-                                threshold: 0.4,
-                            });
-                            console.log("🚀 SEARCH READY: " + data.length + " items loaded.");
-                        } else if (retries > 0) {
-                            console.warn(`Index empty, retrying... (${retries} left)`);
-                            setTimeout(() => loadSearchIndex(retries - 1), 1000);
-                        }
-                    })
-                    .catch(err => {
-                        if (retries > 0) {
-                            setTimeout(() => loadSearchIndex(retries - 1), 1000);
-                        } else {
-                            console.error("Search index failed to load:", err);
-                        }
-                    });
-            };
+        const loadSearchIndex = (retries = 5) => {
+            const v = Date.now();
+            fetch('/index.json?v=' + v)
+                .then(response => {
+                    if (!response.ok) throw new Error("HTTP " + response.status);
+                    return response.json();
+                })
+                .then(data => {
+                    if (data && data.length > 0) {
+                        fuse = new Fuse(data, {
+                            keys: ['title', 'snippet'],
+                            threshold: 0.4,
+                        });
+                        console.log("🚀 SEARCH READY: " + data.length + " items loaded.");
+                    } else if (retries > 0) {
+                        console.warn(`Index empty, retrying... (${retries} left)`);
+                        setTimeout(() => loadSearchIndex(retries - 1), 1000);
+                    }
+                })
+                .catch(err => {
+                    if (retries > 0) {
+                        setTimeout(() => loadSearchIndex(retries - 1), 1000);
+                    } else {
+                        console.error("Search index failed to load:", err);
+                    }
+                });
+        };
 
-            // Start loading the index 500ms after page load
-          setTimeout(loadSearchIndex, 500);
+        // Start loading the index 500ms after page load
+        setTimeout(loadSearchIndex, 500);
 
-const performSearch = () => {
-    const searchInput = document.getElementById('js-search-input');
-    const searchResults = document.getElementById('js-search-results');
+        const performSearch = () => {
+            const searchInput = document.getElementById('js-search-input');
+            const searchResults = document.getElementById('js-search-results');
 
-    if (!fuse || !searchInput || !searchResults) return;
+            if (!fuse || !searchInput || !searchResults) return;
 
-    const query = searchInput.value.trim();
-    const results = fuse.search(query);
+            const query = searchInput.value.trim();
+            const results = fuse.search(query);
 
-    if (query.length > 1 && results.length > 0) {
-        searchResults.innerHTML = results.slice(0, 5).map(r => {
-            const link = r.item.link.startsWith('/') ? r.item.link : '/' + r.item.link;
+            if (query.length > 1 && results.length > 0) {
+                searchResults.innerHTML = results.slice(0, 5).map(r => {
+                    const link = r.item.link.startsWith('/') ? r.item.link : '/' + r.item.link;
 
-          
-            // Remove entire image markdown tag
-            let cleanSnippet = r.item.snippet.replace(/!\[.*?\]\((.*?)\)/g, '');
+                    // Remove entire image markdown tag
+                    let cleanSnippet = r.item.snippet.replace(/!\[.*?\]\((.*?)\)/g, '');
 
-            // Remove loose image/asset paths 
-            cleanSnippet = cleanSnippet.replace(/\/[a-zA-Z0-9._/-]+\.(png|jpg|jpeg|svg|gif|webp)/gi, '');
+                    // Remove loose image/asset paths 
+                    cleanSnippet = cleanSnippet.replace(/\/[a-zA-Z0-9._/-]+\.(png|jpg|jpeg|svg|gif|webp)/gi, '');
 
-            // Clean up remaining markdown symbols and double spaces
-            cleanSnippet = cleanSnippet.replace(/[#*!\[\]\(\)]+/g, '')
-                                       .replace(/\\r|\\n/g, ' ')
-                                       .replace(/\s\s+/g, ' ');
-        
+                    // Clean up remaining markdown symbols and double spaces
+                    cleanSnippet = cleanSnippet.replace(/[#*!\[\]\(\)]+/g, '')
+                        .replace(/\\r|\\n/g, ' ')
+                        .replace(/\s\s+/g, ' ');
 
-            return `
+                    return `
                 <a href="${link}" class="block p-4 hover:bg-blue-50 no-underline group transition-all">
                     <div class="flex items-center justify-between">
                         <div class="font-bold text-[#3b82f6] text-sm group-hover:text-[#1d4ed8]">
@@ -203,137 +197,153 @@ const performSearch = () => {
                     </div>
                 </a>
             `;
-        }).join('');
-        
-        searchResults.classList.remove('hidden');
-    } else {
-        searchResults.classList.add('hidden');
-    }
-};
+                }).join('');
 
-            // Event delegation for input to match your js-search-input ID
-            document.addEventListener('input', (e) => {
-                if (e.target && e.target.id === 'js-search-input') {
-                    performSearch();
-                }
-            });
-
-            // Clicking outside closes search
-            document.addEventListener('click', (e) => {
-                const searchInput = document.getElementById('js-search-input');
-                const searchResults = document.getElementById('js-search-results');
-                if (searchInput && searchResults && !searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-                    searchResults.classList.add('hidden');
-                }
-            });
-        })();
-
-       /** * SIDEBAR & LANGUAGE LOGIC 
-         */
-        document.addEventListener('DOMContentLoaded', function() {
-            // --- 1. SIDEBAR MENU INITIAL STATE ---
-            // We use an array to store multiple open levels (Master Files > Item Brand)
-            const savedState = localStorage.getItem('myxfin_sidebar_state');
-            const allToggles = document.querySelectorAll('.js-menu-toggle');
-
-            if (savedState) {
-                const openIndexes = JSON.parse(savedState);
-                openIndexes.forEach(index => {
-                    const activeToggle = allToggles[index];
-                    if (activeToggle) {
-                        const activeMenu = activeToggle.nextElementSibling;
-                        if (activeMenu && activeMenu.classList.contains('child-menu')) {
-                            activeMenu.classList.remove('hidden');
-                            activeMenu.style.display = 'block';
-                            const arrow = activeToggle.querySelector('svg');
-                            if (arrow) arrow.style.transform = 'rotate(180deg)';
-                        }
-                    }
-                });
+                searchResults.classList.remove('hidden');
             } else {
-                // Fallback for first-time load
-                const openMenus = document.querySelectorAll('.child-menu:not(.hidden)');
-                openMenus.forEach(menu => {
-                    menu.style.display = 'block';
-                    const toggle = menu.previousElementSibling;
-                    if (toggle && toggle.classList.contains('js-menu-toggle')) {
-                        const arrow = toggle.querySelector('svg');
+                searchResults.classList.add('hidden');
+            }
+        };
+
+        // Event delegation for input to match your js-search-input ID
+        document.addEventListener('input', (e) => {
+            if (e.target && e.target.id === 'js-search-input') {
+                performSearch();
+            }
+        });
+
+        // Clicking outside closes search
+        document.addEventListener('click', (e) => {
+            const searchInput = document.getElementById('js-search-input');
+            const searchResults = document.getElementById('js-search-results');
+            if (searchInput && searchResults && !searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.classList.add('hidden');
+            }
+        });
+    })();
+
+    /** * SIDEBAR & LANGUAGE LOGIC 
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- 1. SIDEBAR MENU INITIAL STATE ---
+        const savedState = localStorage.getItem('myxfin_sidebar_state');
+        const allToggles = document.querySelectorAll('.js-menu-toggle');
+
+        if (savedState) {
+            const openIndexes = JSON.parse(savedState);
+            openIndexes.forEach(index => {
+                const activeToggle = allToggles[index];
+                if (activeToggle) {
+                    const activeMenu = activeToggle.nextElementSibling;
+                    if (activeMenu && activeMenu.classList.contains('child-menu')) {
+                        activeMenu.classList.remove('hidden');
+                        activeMenu.style.display = 'block';
+                        const arrow = activeToggle.querySelector('svg');
                         if (arrow) arrow.style.transform = 'rotate(180deg)';
                     }
-                });
+                }
+            });
+        } else {
+            const openMenus = document.querySelectorAll('.child-menu:not(.hidden)');
+            openMenus.forEach(menu => {
+                menu.style.display = 'block';
+                const toggle = menu.previousElementSibling;
+                if (toggle && toggle.classList.contains('js-menu-toggle')) {
+                    const arrow = toggle.querySelector('svg');
+                    if (arrow) arrow.style.transform = 'rotate(180deg)';
+                }
+            });
+        }
+
+       // --- 2. SMART LANGUAGE DROPDOWN LOGIC ---
+const langSelect = document.getElementById('language-select');
+
+if (langSelect) {
+    // 1. AUTOMATIC DETECTION ON LOAD
+    // This part makes the dropdown match the actual URL the user is seeing
+    const currentPath = window.location.pathname;
+    
+    if (currentPath.includes('/ph/') || currentPath.includes('/docs/ph/')) {
+        langSelect.value = 'tl';
+        localStorage.setItem('myxfin_lang', 'tl');
+    } else {
+        langSelect.value = 'en';
+        localStorage.setItem('myxfin_lang', 'en');
+    }
+
+    // 2. CHANGE EVENT (Manual switching)
+    langSelect.addEventListener('change', function() {
+        localStorage.setItem('myxfin_lang', this.value);
+        let path = window.location.pathname;
+
+        if (this.value === 'tl') {
+            // Redirect to Tagalog version
+            if (path === '/' || path === '/index.html') {
+                window.location.href = '/ph/';
+            } else if (path.includes('/docs/') && !path.includes('/docs/ph/')) {
+                window.location.href = path.replace('/docs/', '/docs/ph/');
+            }
+        } else {
+            // Redirect to English version
+            if (path.includes('/docs/ph/')) {
+                window.location.href = path.replace('/docs/ph/', '/docs/');
+            } else if (path.includes('/ph/')) {
+                window.location.href = '/';
+            }
+        }
+    });
+}
+    });
+
+    /** * SIDEBAR CLICK EVENTS 
+     */
+    document.addEventListener('click', function(e) {
+        const toggle = e.target.closest('.js-menu-toggle');
+        if (!toggle) return;
+
+        e.preventDefault();
+        const allToggles = Array.from(document.querySelectorAll('.js-menu-toggle'));
+        const parentLi = toggle.closest('li');
+        const currentChildMenu = parentLi.querySelector('.child-menu');
+
+        if (currentChildMenu) {
+            const isOpening = currentChildMenu.classList.contains('hidden');
+
+            // Toggle visibility
+            currentChildMenu.classList.toggle('hidden');
+            currentChildMenu.style.display = isOpening ? 'block' : 'none';
+
+            const arrow = toggle.querySelector('svg');
+            if (arrow) {
+                arrow.style.transition = 'transform 0.2s ease';
+                arrow.style.transform = isOpening ? 'rotate(180deg)' : 'rotate(0deg)';
             }
 
-            // --- 2. LANGUAGE DROPDOWN LOGIC ---
-            const langSelect = document.getElementById('language-select');
-            if (langSelect) {
-                const savedLang = localStorage.getItem('myxfin_lang');
-                if (savedLang) langSelect.value = savedLang;
-
-                langSelect.addEventListener('change', function() {
-                    localStorage.setItem('myxfin_lang', this.value);
-                    let currentPath = window.location.pathname;
-                    if (this.value === 'tl') {
-                        if (!currentPath.includes('/docs/ph/')) {
-                            window.location.href = currentPath.replace('/docs/', '/docs/ph/');
-                        }
-                    } else {
-                        if (currentPath.includes('/docs/ph/')) {
-                            window.location.href = currentPath.replace('/docs/ph/', '/docs/');
+            if (isOpening && !toggle.closest('.child-menu')) {
+                const topLevelUl = toggle.closest('ul');
+                const topLevelMenus = topLevelUl.querySelectorAll(':scope > li > .child-menu');
+                topLevelMenus.forEach(menu => {
+                    if (menu !== currentChildMenu) {
+                        menu.classList.add('hidden');
+                        menu.style.display = 'none';
+                        const siblingToggle = menu.previousElementSibling;
+                        if (siblingToggle) {
+                            const siblingArrow = siblingToggle.querySelector('svg');
+                            if (siblingArrow) siblingArrow.style.transform = 'rotate(0deg)';
                         }
                     }
                 });
             }
-        });
 
-        /** * SIDEBAR CLICK EVENTS 
-         */
-        document.addEventListener('click', function(e) {
-            const toggle = e.target.closest('.js-menu-toggle');
-            if (!toggle) return;
-
-            e.preventDefault();
-            const allToggles = Array.from(document.querySelectorAll('.js-menu-toggle'));
-            const parentLi = toggle.closest('li');
-            const currentChildMenu = parentLi.querySelector('.child-menu');
-
-            if (currentChildMenu) {
-                const isOpening = currentChildMenu.classList.contains('hidden');
-
-                // Toggle visibility
-                currentChildMenu.classList.toggle('hidden');
-                currentChildMenu.style.display = isOpening ? 'block' : 'none';
-
-                const arrow = toggle.querySelector('svg');
-                if (arrow) {
-                    arrow.style.transition = 'transform 0.2s ease';
-                    arrow.style.transform = isOpening ? 'rotate(180deg)' : 'rotate(0deg)';
+            // SAVE STATE
+            const openIndexes = [];
+            allToggles.forEach((t, index) => {
+                const m = t.nextElementSibling;
+                if (m && m.style.display === 'block') {
+                    openIndexes.push(index);
                 }
-
-                if (isOpening && !toggle.closest('.child-menu')) {
-                    const topLevelUl = toggle.closest('ul');
-                    const topLevelMenus = topLevelUl.querySelectorAll(':scope > li > .child-menu');
-                    topLevelMenus.forEach(menu => {
-                        if (menu !== currentChildMenu) {
-                            menu.classList.add('hidden');
-                            menu.style.display = 'none';
-                            const siblingToggle = menu.previousElementSibling;
-                            if (siblingToggle) {
-                                const siblingArrow = siblingToggle.querySelector('svg');
-                                if (siblingArrow) siblingArrow.style.transform = 'rotate(0deg)';
-                            }
-                        }
-                    });
-                }
-
-                // SAVE STATE: Find every menu that is currently visible and save its index
-                const openIndexes = [];
-                allToggles.forEach((t, index) => {
-                    const m = t.nextElementSibling;
-                    if (m && m.style.display === 'block') {
-                        openIndexes.push(index);
-                    }
-                });
-                localStorage.setItem('myxfin_sidebar_state', JSON.stringify(openIndexes));
-            }
-        });
-    </script>
+            });
+            localStorage.setItem('myxfin_sidebar_state', JSON.stringify(openIndexes));
+        }
+    });
+</script>

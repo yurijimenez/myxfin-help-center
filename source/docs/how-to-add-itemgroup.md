@@ -7,6 +7,10 @@ section: content
 
 # Item Groupings
 
+Item Groupings in MyxFin allows users to organize items into logical groups for easier management and reporting. This module helps categorize items based on business needs, such as by type, department, or other custom criteria.
+
+---
+
 ### Create New Transaction:
 
 **A. Rename the Group Label**

@@ -12,7 +12,6 @@ AR (Accounts Receivable) Adjustment allows users to correct, update, or reverse 
 ---
 
 ![Navigating to AR Adjustment](/assets/img/aradjust.png)
-![Navigating to AR Adjustment](/assets/img/aradjust1.png)
 
 > 💡 **Take note:** Only transactions without reference or with cancelled reference in Receive Payment will be available for unposting.   
 

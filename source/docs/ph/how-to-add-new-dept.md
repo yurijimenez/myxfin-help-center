@@ -13,11 +13,11 @@ Ang mga Department ay nagtatakda ng mga organizational units na ginagamit bilang
 
 ### Paano Gumawa ng Bagong Department:
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **Department**.
-3. I-click ang **Create New (F1)**.
+1. Pumunta sa **Master Data Files**
+2. I-click ang **Department**
+3. I-click ang **Create New (F1)**
 4. Ilagay ang mga detalye ng bagong Department. 
-5. I-click ang **Add Detail**. 
+5. I-click ang **Add Detail**
 
 ![Navigating to dept](/assets/img/dept.png)
 
@@ -25,11 +25,11 @@ Ang mga Department ay nagtatakda ng mga organizational units na ginagamit bilang
 
 ### Paano Mag-update ng Department:
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **Departments**. 
+1. Pumunta sa **Master Data Files**
+2. I-click ang **Departments**
 3. Pumili ng section at i-click ang blue font text o ang Department Code. 
 4. Ilagay ang mga bagong detalye ng department. 
-5. I-click ang **Update Detail**. 
+5. I-click ang **Update Detail** 
 
 ![Navigating to dept](/assets/img/dept1.png)
 
@@ -37,10 +37,10 @@ Ang mga Department ay nagtatakda ng mga organizational units na ginagamit bilang
 
 ### Paano Gawing Inactive ang Department:
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **Departments**.
+1. Pumunta sa **Master Data Files** 
+2. I-click ang **Departments**
 3. I-click ang **yellow cycle icon** o ang **Inactive** button.
 
-* I-click naman ang **green cycle icon** o ang **Active** button para muling i-activate ang item. 
+I-click naman ang **green cycle icon** o ang **Active** button para muling i-activate ang item. 
 
 ![Navigating to dept](/assets/img/dept2.png)

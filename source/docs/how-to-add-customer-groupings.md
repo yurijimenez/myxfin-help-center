@@ -7,6 +7,10 @@ section: content
 
 # Customer Groupings
 
+Customer Groupings in MyxFin allows users to organize customers into logical groups for easier management and reporting. This module helps categorize customers based on business needs, such as by type, region, or other custom criteria.
+
+---
+
 ### How to Create a New Groupings:
 
 **A. Rename the Group Label**

@@ -13,10 +13,10 @@ Ang isang **"salesman"** ay karaniwang tumutukoy sa isang indibidwal o grupo na 
 
 ### Paano Gumawa ng Bagong Salesman:
 
-1. Pumunta sa **Master Data Files**.
-2. I-click ang **Salesman**.
-3. I-click ang **Create New**.
+1. Pumunta sa **Master Data Files**
+2. I-click ang **Salesman**
+3. I-click ang **Create New**
 4. Ilagay ang mga detalye sa lahat ng kinakailangang fields. 
-5. I-click ang **Save**.
+5. I-click ang **Save**
 
 ![Navigating to Salesman](/assets/img/salesman.png)

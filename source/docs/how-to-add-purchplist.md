@@ -24,6 +24,7 @@ o Click **delete** to delete the item.
 8. Click **Save (F2)**
 
 ![Navigating to Pplist](/assets/img/purchplist.png)
+![Navigating to Pplist](/assets/img/purchplistt.png)
 
 ---
 
@@ -37,6 +38,6 @@ o Click **delete** to delete the item.
 6. Enter the new details of the price matrix. 
 7. Click **Save (CTRL+S)**
 
-![Navigating to Pplist](/assets/img/purchplist1.png)
 ![Navigating to Pplist](/assets/img/purchplist2.png)
+![Navigating to Pplist](/assets/img/purchplist22.png)
 

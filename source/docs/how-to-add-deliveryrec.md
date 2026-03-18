@@ -7,10 +7,6 @@ section: content
 
 # Delivery Receipt
 
-EWT Codes maintain the Expanded Withholding Tax classifications used by the system. The EWT Codes currently available are based on the most commonly used BIR EWT codes and do not yet represent the complete list issued by BIR. 
-
----
-
 ![Navigating to Delivery Receipt](/assets/img/deliveryrec1.png)
 
 > 💡 **Take note:** Only transactions without reference or with cancelled reference to SalesInvoice will be available for unposting.  

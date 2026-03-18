@@ -7,6 +7,10 @@ section: content
 
 # Customer Type
 
+Customer Type in MyxFin allows users to categorize customers based on specific attributes or business needs. This module helps organize customers into types, making it easier to manage accounts, track transactions, and generate reports.
+
+---
+
 ### How to Create a New Customer Type:
 1. Go to **Master Data** Files. 
 2. Click **Customers**

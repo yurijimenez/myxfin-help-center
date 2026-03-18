@@ -11,7 +11,6 @@ AP Voucher (Accounts Payable Voucher) is used to record and manage payments to v
 ---
 
 ![Navigating to AP Voucher](/assets/img/apvouch.png) 
-![Navigating to AP Voucher](/assets/img/apvouch1.png) 
 
 > 💡 **Take note:** Only transactions without reference or with cancelled reference in Bill Payment will be available for voiding. 
 

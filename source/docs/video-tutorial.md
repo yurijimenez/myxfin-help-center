@@ -8,7 +8,7 @@ section: body
 <div class="max-w-4xl mx-auto px-6 py-12">
     <div class="mb-10 text-center">
         <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4" style="font-family: 'Sora', sans-serif;">
-            Video <span style="color: #1e40af;">Demo</span>
+            Video <span style="color: #3b82f6;">Demo</span>
         </h1>
         <p class="text-lg text-gray-600 max-w-2xl mx-auto" style="font-family: 'DM Sans', sans-serif;">
             Welcome to the MyxFin Video Gallery. Find visual walk-throughs and overview videos to help you understand the system's capabilities.

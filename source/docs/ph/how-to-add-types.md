@@ -7,6 +7,10 @@ section: content
 
 # Item Types
 
+Ang Item Types sa MyxFin ay ginagamit upang ikategorya ang mga inventory items batay sa kanilang uri o gamit. Nakakatulong ang module na ito upang mas maayos na maorganisa ang mga items sa system, masubaybayan ang mga transactions, at makagawa ng mas accurate na reports.
+
+---
+
 ### Paano Gumawa ng Bagong Item Type:
 1. Pumunta sa **Master Data Files** 
 2. I-click ang **Items**

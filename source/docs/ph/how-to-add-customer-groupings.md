@@ -15,9 +15,9 @@ Ang Customer Groupings sa MyxFin ay ginagamit upang ayusin ang mga customers sa 
 
 **A. Palitan ang Pangalan ng Group Label**
 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **System Settings**.
-3. Pumunta sa **Parameters Tab**.
+1. Pumunta sa **Master Data Files** 
+2. I-click ang **System Settings**
+3. Pumunta sa **Parameters Tab**
 4. Sa ilalim ng Customers Groupings, ilagay ang label para sa bawat grupong kailangan mo. 
 5. Pindutin ang **Enter** pagkatapos i-type ang label.
 6. May lalabas na check mark sa tabi ng Group para ipakita na ang pagbabago ay naka-save na. 
@@ -27,12 +27,13 @@ Ang Customer Groupings sa MyxFin ay ginagamit upang ayusin ang mga customers sa 
 ---
 
 **B. Magdagdag ng Group Options** 
-1. Pumunta sa **Master Data Files**. 
-2. I-click ang **Customers**.
-3. I-click ang **Groupings**. 
-4. I-click ang **Create New (F1)**. 
+
+1. Pumunta sa **Master Data Files** 
+2. I-click ang **Customers**
+3. I-click ang **Groupings**
+4. I-click ang **Create New (F1)** 
 5. Ilagay ang mga detalye ng bagong option. 
-6. I-click ang **Add Details**.
+6. I-click ang **Add Details**
 
 ![Navigating to CustomerGroup](/assets/img/custgroup1.png)    
 

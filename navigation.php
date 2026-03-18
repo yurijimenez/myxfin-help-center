@@ -31,9 +31,9 @@ return [
                 'children' => [
                     'How to add Sales Pricelist' => 'docs/how-to-add-sp',
                     'How to add Purchase Pricelist' => 'docs/how-to-add-purchplist',
-                    'How to add Discount Matrix' => 'docs/how-to-add-coupons',
+                    'How to add Discount Matrix' => 'docs/how-to-add-discount-matrix',
                     'How to add Special Discount' => 'docs/how-to-add-special-discount',
-                    'How to add Coupons' => 'docs/how-to-add-coupons',
+                    'How to add Coupons' => 'docs/how-to-add-coupon',
                 ],
             ],
             'Customer' => [
@@ -123,17 +123,17 @@ return [
         'Reports' => [
         'url' => '#',
         'children' => [
-            'How to add Sales' => 'docs/how-to-add-purchase-request',
-            'How to add Purchases' => 'docs/how-to-add-purchase-order',
-            'How to add Books of Account' => 'docs/how-to-add-purchase-order',
-            'How to add BIR Files and Forms' => 'docs/how-to-add-purchase-order',
-            'How to add Inventory' => 'docs/how-to-add-purchase-order',
+            'How to view Sales' => 'docs/how-to-view-sales-report',
+            'How to view Purchases' => 'docs/how-to-view-purchases-report',
+            'How to view Books of Account' => 'docs/how-to-view-booksofacc',
+            'How to view BIR Files and Forms' => 'docs/how-to-view-bir-files-and-forms',
+            'How to view Inventory' => 'docs/how-to-view-inventory-reports',
         ],
         ],
          'Audit Trail' => [
         'url' => '#',
         'children' => [
-            'affdsgrhtjtk' => 'docs/how-to-add-purchase-request',
+            'How to view Audit Trail' => 'docs/how-to-view-audittrail',
         ],
         ],
         
