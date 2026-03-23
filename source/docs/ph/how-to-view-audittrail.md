@@ -14,16 +14,25 @@ Ang **Audit Trail** ay nagsisilbing "black box" ng system, kung saan nire-record
 ---
 
 ### 1. Pag-unawa sa Audit Log
-Ipinapakita ng Audit Trail table ang real-time na data ng system interactions:
+Ang **Audit Trail** ay nagbibigay ng detalyado at real-time na kasaysayan ng bawat interaksyon sa system. Bawat log entry ay naglalaman ng mga sumusunod na mahahalagang impormasyon:
 
-| Column Name | Deskripsyon |
-| :--- | :--- |
-| **Transaction No.** | Ang specific na ID o Reference Number ng record na naapektuhan (hal. SO# 102 o PR# 032600000). |
-| **Module** | Ang bahagi ng MyxFin kung saan naganap ang action (hal. BANK, PURCHASE REQUEST, PAYMENT TERMS). |
-| **Event** | Uri ng action na ginawa: **INSERTED** (Created), **UPDATED** (Edited), o **DELETED**. |
-| **User** | Pangalan ng staff na gumawa ng action. |
-| **PC Address** | IP address ng ginamit na computer, nagbibigay ng lokasyon o network footprint ng event. |
-| **Date** | Eksaktong timestamp (Year-Month-Day Hour:Minute:Second) ng activity. |
+* **Transaction No.** :
+Ang partikular na ID o Reference Number ng record na naapektuhan (hal., SO# 102 o PR# 032600000).
+
+* **Module** :
+Ang partikular na bahagi ng MyxFin kung saan naganap ang aksyon (hal., BANK, PURCHASE REQUEST, PAYMENT TERMS).
+
+* **Event** :
+Ang uri ng aksyon na isinagawa: **INSERTED** (Nilikha), **UPDATED** (Inedit), o **DELETED** (Tinanggal).
+
+* **User** :
+Ang pangalan ng staff na nagsagawa ng aksyon.
+
+* **PC Address** :
+Ang IP address ng ginamit na computer, na nagsisilbing indikasyon ng lokasyon o network kung saan nangyari ang aksyon.
+
+* **Date** :
+Ang eksaktong oras at petsa (Taon-Buwan-Araw Oras:Minuto:Segundo) ng aktibidad.
 
 ---
 

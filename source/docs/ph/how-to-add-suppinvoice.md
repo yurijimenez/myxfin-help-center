@@ -1,40 +1,50 @@
 ---
 title: Suppliers Invoice
-description: Isang step-by-step na gabay sa pag-aayos ng iyong mga Supplier Invoice sa MyxFin.
+description: Step-by-step na gabay sa pamamahala ng iyong accounts sa MyxFin.
 extends: _layouts.documentation
 section: content
 ---
 
 # Suppliers Invoice
 
-![Navigating to SupplierInvoice](/assets/img/suppinvoice.png)  
+![Navigating to SupplierInvoice](/assets/img/suppinvoice.png)
 
-> ✔️ Tanging ang mga transaksyon na walang reference o may cancelled reference sa AP Voucher at Adjustment ang maaaring i-unpost.
+> ✔️ Tanging mga transaksyon na walang reference o may cancelled na reference sa AP Voucher at Adjustment lamang ang maaaring i-unpost.
 
-### Paggawa ng Bagong Transaksyon: 
+### Paano Gumawa ng Bagong Transaksyon
 
-![Navigating to SupplierInvoice](/assets/img/suppinvoice1.png)  
+![Navigating to SupplierInvoice](/assets/img/suppinvoice1.png)
+![Navigating to SupplierInvoice](/assets/img/suppinvoice2.png)
 
-**Ilagay** muna ang supplier bago magdagdag ng mga item o bago piliin ang reference RR. 
+1. **I-click ang Create Button**  
+Simulan sa pag-click ng `+ Create` button na makikita sa kanang itaas ng module upang magbukas ng bagong invoice form.
 
-**I-click** ang search button upang i-insert ang reference receiving transaction.
+2. **Piliin ang Supplier**  
+Ilagay muna ang detalye ng supplier. Kailangan itong gawin bago magdagdag ng items o pumili ng reference RR upang matiyak na tama ang mapping ng data.
 
-Maaari ka ring gumawa ng supplier invoice sa pamamagitan ng manu-manong pagdagdag ng mga **NON-INVENTORIABLE** na item gaya ng mga serbisyo (services). 
+3. **Maglagay ng Reference (Opsyonal)**  
+**I-click** ang `Search` button upang kumuha ng reference receiving transaction (RR).
 
-Maaari mo pa ring i-edit ang presyo para sa anumang adjustment.
+4. **Manu-manong Magdagdag ng Items**  
+Maaari ka ring gumawa ng invoice sa pamamagitan ng manu-manong pagdagdag ng mga **NON-INVENTORIABLE** na items, tulad ng mga serbisyo.
 
-> Lalabas ang picklist pagkapindot sa search button.
+5. **Ayusin ang Presyo**  
+Kung kinakailangan, maaari mo pang i-edit ang unit price para sa final na adjustments bago i-save.
 
 ---
 
-### Pag-edit ng Transaksyon:
+### Paano Mag-edit ng Transaksyon
 
-![Navigating to SupplierInvoice](/assets/img/suppinvoice2.png) 
+Kung kailangan mong baguhin ang isang existing na invoice, sundin ang mga hakbang na ito:
 
-**I-click** ang edit upang ma-activate ang form para sa pagbabago.
+1. **Pumasok sa Edit Mode**  
+I-click ang `Edit` button upang ma-unlock ang mga form fields.
 
-Siguraduhin na ang iyong mga detalye ay may kaukulang **account titles**.
+2. **I-verify ang Account Titles**  
+Siguraduhin na lahat ng line items ay may kaukulang **account titles**; kung wala, maaaring hindi mag-post nang tama ang transaksyon.
 
-**Red Button** > I-click upang ikansela ang pag-edit.
+3. **I-save o I-cancel**
 
-Kapag ang form ay nasa editing mode, mag-a-activate ang **Save button**.
+* **Save Button:** I-click ito kapag tapos ka na sa iyong mga pagbabago (active lamang sa Edit Mode).
+
+* **Red Button:** I-click ito kung nais mong **i-discard ang changes** at lumabas sa edit mode.

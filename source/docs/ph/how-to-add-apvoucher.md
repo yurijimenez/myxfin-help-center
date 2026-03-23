@@ -1,40 +1,56 @@
 ---
 title: AP Voucher
-description: Isang step-by-step na gabay sa pag-aayos ng iyong mga AP Voucher sa MyxFin.
+description: Hakbang-hakbang na gabay sa pamamahala ng iyong accounts sa MyxFin.
 extends: _layouts.documentation
 section: content
 ---
 
 # AP Voucher
 
-Ang AP Voucher (Accounts Payable Voucher) ay ginagamit upang i-record at pamahalaan ang mga bayad sa vendors sa MyxFin. Sa pamamagitan ng feature na ito, maaaring gumawa ng bagong voucher, subaybayan ang mga bayad, at i-adjust o i-void ang mga transaksyon kung kinakailangan. Nakakatulong ang AP Voucher upang masiguro na maayos at tama ang lahat ng talaan ng payments sa vendors.
+Ang AP Voucher (APV) ay ginagamit upang opisyal na maitala at mapamahalaan ang mga bayarin sa iyong mga vendor. Tinitiyak nito na ang lahat ng obligasyon ay maayos na nadodokumento, nasusubaybayan, at handa para sa proseso ng pagbabayad.
+
+> 💡 **Tandaan:** Ang mga transaksyon ay maaari lamang i-void kung wala itong active references (o may cancelled references) sa **Bills Payment**.
 
 ---
 
-![Navigating to AP Voucher](/assets/img/apvouch.png) 
-![Navigating to AP Voucher](/assets/img/apvouch1.png) 
+### Paano Gumawa ng Bagong Transaksyon
 
-> 💡 **Tandaan:** Tanging ang mga transaksyon na walang reference o may cancelled reference sa Bill Payment ang maaaring i-void. 
+1. **Simulan ang Voucher**  
+I-click ang **Create New** button upang magbukas ng bagong form.
 
---- 
+2. **Piliin ang Supplier**  
+Hanapin at piliin muna ang pangalan ng **Supplier**.
 
-### Paggawa ng Bagong Transaksyon:
+3. **Piliin ang AP Type**  
+Piliin ang kategorya na naaayon sa iyong transaksyon.  
+**Purchases (Credit)** – Para sa goods/services na na-deliver na.  
+**Purchases (Advance)** – Para sa mga bayad bago ang delivery.  
+**EWT Remittance** – Para mag-reference ng EWT transactions mula sa APV, Bills Payment, o JV.  
+**Petty Cash / Others** – Para sa manual accounting entries o ibang payables.
 
-**AP TYPE**
+4. **Buksan ang Reference Window**  
+I-click ang **Insert** button upang hanapin ang mga pending transactions na konektado sa napiling Supplier at AP Type.
 
-**Purchases (Credit)** – Para sa mga binili na babayaran pa lamang pagkatapos matanggap ang mga produkto.
+5. **Piliin ang Mga Transaksyon**  
+Sa pop-up window, i-check ang mga invoice o resibo na nais mong isama, pagkatapos ay i-click ang **Insert** upang mailipat ang mga ito sa main voucher details.
 
-**Purchases (Advance Payment)** – Para sa mga binili na binayaran na bago pa man dumating ang mga produkto.
+6. **I-save**  
+Suriin ang accounting entries at totals, pagkatapos ay i-click ang **Save** button.
 
-**EWT Remittance** – Para sa paggawa ng APV na nag-re-reference sa lahat ng EWT Transactions para sa APV, Bills Payment, at JV.
-
-**Petty Cash Replenishment / Others** – Para sa iba pang bayarin o manual accounting entry. 
-
-![Navigating to AP Voucher](/assets/img/apvouch2.png) 
+![Navigating to AP Voucher](/assets/img/apvouch2.png)
 
 ---
 
-### Pag-edit ng Transaksyon:
+### Paano Mag-edit ng Transaksyon
 
-![Navigating to AP Voucher](/assets/img/apvouch3.png) 
+1. **Piliin ang Transaksyon**  
+Sa main dashboard, i-click ang **Transaction No.** ng voucher na nais mong i-update.
+
+2. **I-activate ang Edit Mode**  
+I-click ang **Edit** button upang ma-unlock ang fields.
+
+3. **Baguhin at I-save**  
+I-update ang AP Type o i-edit ang line items. Kapag tapos na, i-click ang **Save** upang ma-finalize ang iyong changes.
+
+![Navigating to AP Voucher](/assets/img/apvouch3.png)
 ![Navigating to AP Voucher](/assets/img/apvouch4.png)

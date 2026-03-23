@@ -32,8 +32,10 @@ Ang Suppliers module sa MyxFin ay ginagamit upang maayos na pamahalaan ang impor
 1. Pumunta sa **Master Data Files** 
 2. I-click ang **Suppliers**
 3. I-click ang **Master List**
-4. Pumili ng supplier at i-click ang blue font text o ang Supplier Code. 
+4. Pumili ng supplier at i-click ang blue font text o ang Supplier Code.  
+
 5. Kapag lumabas na ang mga detalye, i-click ang **Edit (CTRL+E)**
+
 6. Ilagay ang mga bagong detalye ng supplier. 
 7. I-click ang **Save (CTRL+S)**
 

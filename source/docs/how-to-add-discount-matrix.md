@@ -44,6 +44,7 @@ To manually create a single discount rule:
 If you have a large list of items to discount, use the **Mass Upload** feature to save time.
 
 **Steps to Mass Upload:**
+
 1.  In the Discount Matrix list view, click the **Mass Upload** button (orange icon next to Create New).
 
 2.  **Label & Description:** Enter the general identification for this batch upload.
@@ -64,10 +65,10 @@ If you have a large list of items to discount, use the **Mass Upload** feature t
 
 | Field | Description |
 | :--- | :--- |
-| **Label** | The identifier for the discount campaign. |
-| **Effectivity Date** | The day the discount starts being active in sales. |
-| **Due Date** | The day the discount automatically expires. |
-| **Sales Debit Acct** | The GL account that tracks the reduction in revenue. |
+| **Label**: | The identifier for the discount campaign. |
+| **Effectivity Date**: | The day the discount starts being active in sales. |
+| **Due Date**: | The day the discount automatically expires. |
+| **Sales Debit Acct**: | The GL account that tracks the reduction in revenue. |
 
 ---
 

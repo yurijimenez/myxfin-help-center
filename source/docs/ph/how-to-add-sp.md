@@ -21,9 +21,9 @@ Ang Sales Price List, na kilala rin bilang **Price Matrix**, ay naglalaman ng mg
 6. Ilagay ang **new Version Code** at **Version Description** 
 7. I-click ang **Save Details**
 
-* **Para mag-delete** ng partikular na PM Version, i-click lamang ang delete.
+> **Para mag-delete** ng partikular na PM Version, i-click lamang ang delete.
 
-* **Para mag-update**, ilagay lamang ang mga bagong detalye sa Version Description. Tanging ang Version Description lamang ang maaaring baguhin.
+> **Para mag-update**, ilagay lamang ang mga bagong detalye sa Version Description. Tanging ang Version Description lamang ang maaaring baguhin.
 
 ![Navigating to SP](/assets/img/sp.png)
 

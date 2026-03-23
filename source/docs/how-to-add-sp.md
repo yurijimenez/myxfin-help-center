@@ -16,14 +16,18 @@ The Sales Price List, also known as the Price Matrix, stores structured pricing 
 1. Go to**Master Data**Files. 
 2. Click**Price List**
 3. Click**Sale Pricelist**
+
 4. Click**PM Version**
+
 5. Click**Add New**
-6. Enter the**new Version Code**and**Version Description**. 
+
+6. Enter the **new Version Code** and **Version Description** 
+
 7. Click Save Details. 
 
-o **To delete** specific PM Version, just click delete.
+> **To delete** specific PM Version, just click delete.
 
-o **To update**, just enter the updated details of Version Description
+> **To update**, just enter the updated details of Version Description
 Only the Version Description can be update.
 
 ![Navigating to SP](/assets/img/sp.png)

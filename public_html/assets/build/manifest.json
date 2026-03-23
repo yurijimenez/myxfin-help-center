@@ -1,0 +1,18 @@
+{
+  "source/_assets/css/home.css": {
+    "file": "assets/home-WNJ7F4LN.css",
+    "src": "source/_assets/css/home.css",
+    "isEntry": true
+  },
+  "source/_assets/css/main.css": {
+    "file": "assets/main-CPgFpimf.css",
+    "src": "source/_assets/css/main.css",
+    "isEntry": true
+  },
+  "source/_assets/js/main.js": {
+    "file": "assets/main-C-SJyFin.js",
+    "name": "main",
+    "src": "source/_assets/js/main.js",
+    "isEntry": true
+  }
+}

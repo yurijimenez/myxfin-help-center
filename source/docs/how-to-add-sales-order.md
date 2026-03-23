@@ -44,11 +44,15 @@ section: content
 ![SO TABLE](/assets/img/so4.png)
 
 1. Search customer before adding items . 
-2. **Sales Type:**Connected to items Sales Type  . 
-3. **Details:**Type Item Code or Description to add item. 
-4. Click**Green Button**to save the transaction. 
-5. Click**Blue Button**To Go back to list (transaction won’t be save). 
-6. Click**Light Blue Button**to add items based from a quote 
+2. **Sales Type:** Connected to items Sales Type  . 
+
+3. **Details:** Type Item Code or Description to add item.
+
+4. Click **Green Button SAVE** to save the transaction. 
+
+5. Click **Back to main** To Go back to list (transaction won’t be save).  
+
+6. Click **Quote Insert Button** to add items based from a quote 
 
 > 💡 **Take note:**Order Details Customer > the customer to be billed or to appear in Sales Invoice, Delivered To Customer > the customer who will receive the delivery or to appear in the Deliver Receipt
 
@@ -64,7 +68,9 @@ section: content
 
 ![Editing SO](/assets/img/so7.png)
 
-1. **Light Blue** button > click to add more items  based from a quote.
-2. **Red** button the**Undo Edit**Button > Click to cancel editing.
+1. **Quote Insert** button > click to add more items  based from a quote.
+
+2. **Red** button the **Undo Edit** Button > Click to cancel editing.
+
 3. **Green** button > When the form is in editing mode Save
 button will activate. 

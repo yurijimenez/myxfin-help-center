@@ -1,41 +1,64 @@
 ---
 title: Purchase Receiving
-description: A step-by-step guide to managing your accounts in MyxFin.
+description: Step-by-step guide to managing your accounts in MyxFin.
 extends: _layouts.documentation
 section: content
 ---
 
 # Purchase Receiving
 
-![Navigating to PRec](/assets/img/purchrec.png)
+The Purchase Receiving module is used to document the arrival of goods. This step updates your inventory levels and serves as the basis for the Supplier's Invoice.
 
-> 💡 **Take note:** Only transactions without reference or with cancelled reference to Suppliers Invoice or Purchase Return will be available for un-posting. 
+> 💡 **Note:** Transactions can only be unposted if they have no active references (or cancelled references) in **Suppliers Invoice** or **Purchase Return**.
 
 ---
 
-### Create New Transaction:
+### How to Create a New Transaction
 
 ![Navigating to PRec](/assets/img/purchrec1.png)
+
+1. **Start the Receipt**  
+Click the **Create New** button.
+
+2. **Select Supplier**  
+Search for and select the **Supplier** before adding any items.
+
+3. **Add Items (Two Methods)**  
+**Method A: Manual Entry** → Type the item details and press **ENTER** or click the **Insert** button. Use the **Barcode/Serial** button if the items have specific tracking numbers.  
+**Method B: PO Reference** → Click the **PO Insert** button. In the pop-up window, click the **PO No.**, check the boxes for the items received, and click **Insert**.
+
+4. **Review & Clean Up**  
+If you added an incorrect item, click the **Delete** (Trash) icon in the details section.
+
+5. **Save**  
+Once the physical count matches the screen, click the **Save** button.
+
 ![Navigating to PRec](/assets/img/purchrec2.png)
-![Navigating to PRec](/assets/img/purchrec3.png)
-
-1. **Back to main**button, Go back to list (transaction won’t be save) 
-2. **PO insert button** Click to add received PO.
-3. **Save button** click to save the transaction.
-
 ![Navigating to PRec](/assets/img/purchrec4.png)
-![Navigating to PRec](/assets/img/purchrec5.png)
 
 ---
 
-### Editing a Transaction:
+### How to Edit a Transaction
 
-> ✔️ You can edit a transaction as long as it is not yet posted or cancelled.    
+> ✔️ **Editing Tip:** You can modify a transaction as long as it has not been posted or cancelled.
+
+1. **Enter Edit Mode**  
+Click the **Edit** button to unlock the transaction details.
+
+2. **Modify Records**  
+Update quantities or add missing items.
+
+3. **Commit or Discard**  
+**Save:** Becomes active only while in editing mode. Click to save changes.  
+**Undo Edit:** Click to cancel changes and exit edit mode without saving.
 
 ![Navigating to PR](/assets/img/pr4.png)
-![Navigating to PR](/assets/img/pr5.png)
-
-1. **Undo Edit** button to cancel editing.
-2. When the form is in editing mode Save button will activate.
 
 ---
+
+### Navigation Tips
+
+* **Back to Main:** Returns to the list view without saving the current transaction.  
+
+* **Close Button:** After inserting items manually, click **Close** to return to the main transaction form.
+

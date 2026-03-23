@@ -27,10 +27,15 @@ Ang mga System User ay nagtatakda ng mga awtorisadong account sa ERP system. Baw
 
 1. Pumunta sa **Master Data Files**
 2. I-click ang **System Users**
+
 3. Pumili ng user at i-click ang **pencil icon** o ang Edit user's access. 
+
 4. Piliin ang mga **category** kung saan magkakaroon ng access ang user. 
+
 5. Kapag napili na ang category, lagyan ng check ang checkbox na tumutugma sa access ng user.   
+
 6. Kung ang user ay may access sa lahat, i-tick lamang ang **CHECK ALL** 
+
 7. I-click ang **Save (F2)**
 
 ![Navigating to System User](/assets/img/sysuser1.png)

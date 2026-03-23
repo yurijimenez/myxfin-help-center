@@ -12,7 +12,7 @@ Ang Item Classification ay ginagamit upang ayusin at ikategorya ang mga items sa
 ---
 
 ### Paano Gumawa ng Bagong Classification:
-1. Pumunta sa **Master Data Files**. 
+1. Pumunta sa  **Master Data** Files
 2. I-click ang **Items**
 3. I-click ang **Classification**
 4. I-click ang **Create New (F1)**
@@ -27,12 +27,12 @@ Ang Item Classification ay ginagamit upang ayusin at ikategorya ang mga items sa
 ### Paano Mag-update ng Classifications:
   
 
-1. Pumunta sa **Master Data Files**. 
+1. Pumunta sa **Master Data** Files
 2. I-click ang **Items**
 3. I-click ang **Classification**
-4. I-click ang **Item classification code**. 
+4. I-click ang **Item classification code**
 5. Ilagay ang mga bagong detalye. 
-6. I-click ang **Update Detail**.
+6. I-click ang **Update Detail**
 
 ![Navigating to cl](/assets/img/cl2.png)
 
@@ -40,7 +40,7 @@ Ang Item Classification ay ginagamit upang ayusin at ikategorya ang mga items sa
 
 ### Paano Gawing Inactive ang Classifications:
 
-1. Pumunta sa **Master Data Files**. 
+1. Pumunta sa **Master Data** Files
 2. I-click ang **Items**
 3. I-click ang **Classification** 
 4. I-click ang **Active (Green)** / **Inactive (Yellow)** icon. 

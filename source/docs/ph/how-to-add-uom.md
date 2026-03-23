@@ -29,7 +29,7 @@ Ang Units of Measure (UOM) sa MyxFin ay ginagamit upang tukuyin at pamahalaan an
 1. Pumunta sa **Master Data Files**
 2. I-click ang **Items**
 3. I-click ang **Unit of Measure**
-4. Piliin ang **uom** at i-click ang **blue font text** o ang **UOM Code**. 
+4. Piliin ang uom at i-click ang blue font text o ang UOM Code.
 5. Ilagay ang mga binagong detalye para sa UOM. 
 6. I-click ang **Update** Detail.
 

@@ -154,3 +154,80 @@ section: content
         </div>
     </div>
 </div>
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Can I see who created or edited a transaction?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+           Yes. Most transaction screens have an Audit Trail or Created By label at the bottom of the form. This shows the username and timestamp of when the record was last touched.
+        </p>
+    </div>
+</div>
+<div class="faq-item">
+    <button class="faq-question">
+        <span>I accidentally "Voided" a check. Can I "Un-void" it?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+         No. Once a check is voided, it is cancelled for audit purposes. You must create a New Transaction with a new check number. This prevents potential fraud or duplicate check issues.
+        </p>
+    </div>
+</div>
+<div class="faq-item">
+    <button class="faq-question">
+        <span>How do I see my "Top Selling Items?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+        Go to Reports > Sales Reports > Sales Summary by Item. Use the date filters to see which items have the highest movement and profit margins.
+        </p>
+    </div>
+</div>
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Why is the "Save" button greyed out?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+       Check for an "Out of Balance" amount, missing mandatory fields (marked with *), or ensure you have clicked the Edit button first.
+        </p>
+    </div>
+</div>
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Why does the "SI (Insert)" button show no items?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+        You must select the Customer Name first to filter their specific outstanding invoices.
+        </p>
+    </div>
+</div>
+<div class="faq-item">
+    <button class="faq-question">
+        <span>What does "Undo Edit" do?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+      It cancels any changes you made since clicking "Edit" and returns the form to its last saved state.
+        </p>
+    </div>
+</div>
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Why does the system log me out?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+     For security, MyxFin has an Auto-Logout timer if the system is idle for too long.
+        </p>
+    </div>
+</div>

@@ -34,10 +34,11 @@ Karamihan sa mga reports sa module na ito ay gumagamit ng mga sumusunod na filte
 
 * **Supplier Name:** Maghanap ng partikular na vendor.
 * **Product:** I-filter batay sa specific na item.
-* **Transaction Type:** Pumili sa *All Transactions*, *Posted*, o *Unposted*.
+* **Transaction Type:** Pumili sa *All Transactions*, *Posted*, *Unposted*.
 * **Date Range:** Piliin ang simula at katapusan ng petsa.
 
-**Mga Action:**
+### **Mga Action:**
+
 * **View Report (Red Button):** Ipinapakita ang report sa screen.
 
 * **To Excel (Green Button):** Ini-export ang data bilang spreadsheet.

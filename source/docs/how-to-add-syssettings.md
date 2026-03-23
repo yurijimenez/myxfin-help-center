@@ -56,7 +56,9 @@ defined numbering convention.
 1. Go to **Master Data** Files. 
 2. Click **System Setup** 
 3. Click **Parameters**
-4. Click**Add**to Add New Field or Edit the Description of an existing field. 
+
+4. Click **Add** to Add New Field or Edit the Description of an existing field. 
+
 5. Click Save Contact Details to save the changes. 
 
 > ✔️ You may also activate or deactivate a field by clicking the button on the right side.  

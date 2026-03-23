@@ -61,7 +61,9 @@ stock levels, and providing accurate financial information.
 1. Go to **Master Data Files**
 2. Click **Items**
 3. Click **Master List**
-4. Click the **yellow cycle icon** or **Inactive**
+
+4. Click the **yellow cycle icon** or **Inactive** 
+
 5. Click the **green cycle icon** or **Active** to activate the item. 
 
 ![Navigating to Banks](/assets/img/item10.png)

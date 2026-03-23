@@ -19,7 +19,7 @@ Ang Tax Types ay ginagamit para sa tamang tax classification na kinakailangan sa
 2. I-click ang **Accounting Parameters** 
 3. I-click ang **TAX Types** 
 4. I-click ang **Create New (F1)** 
-5. Ilagay ang mga detalye ng TAX Type. 
+5. Ilagay ang mga detalye ng TAX Type
 6. I-click ang **Add Detail**
 
 ![Navigating to Taxtype](/assets/img/taxt.png) 

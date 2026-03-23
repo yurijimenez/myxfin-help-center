@@ -28,7 +28,7 @@ The Units of Measure (UOM) module in MyxFin allows users to define and manage me
 1. Go to**Master Data Files**
 2. Click**Items**
 3. Click**Unit of Measure**
-4. Select**uom**and click the**blue font text**or the**UOM Code**. 
+4. Select uom and click the blue font text or the UOM Code.
 5. Enter the updated details for the UOM 
 6. Click **Update**Detail.
 

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Isang step-by-step na gabay sa pag-aayos ng iyong mga System User sa MyxFin.">
+    
+    <meta property="og:site_name" content="MyxFin Help Center" />
+    <meta property="og:title" content="System Users | MyxFin Help Center" />
+    <meta property="og:description" content="Isang step-by-step na gabay sa pag-aayos ng iyong mga System User sa MyxFin." />
+    <meta property="og:url" content="https://myxfinhelpcenter.notifix.site/docs/ph/how-to-add-sysusers" />
+    <meta property="og:image" content="/assets/img/myxfinlogo.png" />
+    <meta property="og:type" content="website" />
+    
+    <title>MyxFin Help Center | System Users</title>
+
+    <link rel="home" href="https://myxfinhelpcenter.notifix.site">
+
+    <link rel="icon" type="image/png" href="/assets/img/myxfinlogo.png">
+    <link rel="icon" type="image/png" href="/assets/img/myxfinlogo.png?v=1">
+
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
+    
+        <link rel="stylesheet" href="/assets/build/assets/main-CPgFpimf.css">
+    <script defer type="module" src="/assets/build/assets/main-C-SJyFin.js"></script>
+
+    
+</head>
+
+<body class="h-screen flex flex-col bg-white text-gray-800 leading-normal overflow-hidden" style="font-family: 'Sora', sans-serif;">
+
+    <header class="h-16 shrink-0 sticky top-0 z-50 flex items-center justify-between bg-white border-b px-4">
+        <div class="flex items-center">
+            <a href="/" class="inline-flex items-center no-underline">
+                <img class="h-10 mr-2 w-auto" src="/assets/img/myxfinlogo.png" alt="logo" />
+                <h1 class="text-lg md:text-2xl text-[#3b82f6] font-semibold my-0">
+                    MyxFin Help Center
+                </h1>
+            </a>
+        </div>
+        
+        <div class="flex items-center gap-4 ml-auto">
+            
+            <div class="relative flex items-center">
+                <div class="absolute left-3 top-1/2 -translate-y-1/2 flex items-center pointer-events-none">
+                    <svg class="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <input type="text" id="js-search-input" placeholder="Search..." autocomplete="off" spellcheck="false"
+                    class="w-32 md:w-64 bg-white border-2 border-gray-200 rounded-full py-2 pl-10 pr-4 text-sm focus:outline-none focus:border-[#3b82f6] focus:ring-4 focus:ring-blue-100 transition-all shadow-sm">
+                <div id="js-search-results" class="absolute top-full left-0 w-64 md:w-96 bg-white shadow-xl rounded-xl hidden z-[100] mt-3 border border-gray-100 overflow-hidden divide-y divide-gray-50"></div>
+            </div>
+
+            
+            <div class="relative flex items-center group">
+                
+                <div class="absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 group-focus-within:text-[#3b82f6] transition-colors">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18" />
+                    </svg>
+                </div>
+
+                <select id="language-select"
+                    class="appearance-none bg-gray-50 border border-gray-200 text-gray-700 py-2 pl-9 pr-10 rounded-lg text-sm font-medium cursor-pointer 
+               hover:bg-white hover:border-[#3b82f6] focus:border-[#3b82f6] focus:ring-4 focus:ring-blue-50 outline-none transition-all shadow-sm">
+                    <option value="en">English (US)</option>
+                    <option value="tl">Tagalog (PH)</option>
+                </select>
+
+                
+                <div class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none flex items-center text-gray-400 group-hover:text-[#3b82f6] transition-colors">
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 9l-7 7-7-7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+                <button class="flex justify-center items-center bg-blue-500 border border-blue-500 h-10 mr-4 px-5 rounded-full lg:hidden focus:outline-hidden"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+    </header>
+
+    <main class="flex flex-1 overflow-hidden">
+       <nav class="w-64 sidebar-myxfin shrink-0 overflow-y-auto border-none">
+            <ul class="my-0 list-none pl-0"> 
+                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle  flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Master Files</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle pl-4 flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Accounting Parameters</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-charts-of-accounts"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Charts of Accounts
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-banks"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Banks
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-currency-list"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Currency List
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-tax-types"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Tax Types
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-ewtcodes"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add EWT Codes
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-approforma"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add A/P Proforma
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-paymentterms"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Payment Terms
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle pl-4 flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Items</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-items"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Items
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-uom"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add UOM
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-types"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Types
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-itemclassification"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Classification
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-itemgroup"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Groupings
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle pl-4 flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Pricelist</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-sp"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Sales Pricelist
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-purchplist"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Purchase Pricelist
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-discount-matrix"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Discount Matrix
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-special-discount"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Special Discount
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-coupon"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Coupons
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle pl-4 flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Customer</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-customer"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Customer
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-customer-type"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Customer Types
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-customer-classification"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Customer Classification
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-customer-groupings"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Customer Groupings
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle pl-4 flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Suppliers</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-newsuppliers"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Suppliers
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-supplierstype"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Suppliers Types
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-suppliersclass"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Suppliers Classification
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-suppliersgroup"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Suppliers Groupings
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-salesman"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Salesman
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-new-dept"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Department
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-sections"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Sections
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-sysusers"
+        class="block pl-4 px-4 py-2 text-sm bg-white/20 font-bold hover:bg-white/10 transition-colors">
+            How to add System Users
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-syssettings"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add System Settings
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle  flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Sales &amp; Delivery</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-quotation"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Quotation
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-sales-order"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Sales Order
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-deliveryrec"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Delivery Receipt
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-salesinvoice"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Sales Invoice
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-salesreturn"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Sales Return
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle  flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Purchases</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-pr"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Purchase Request
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-po"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Purchase Order
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-purchreceiving"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Purchase Receiving
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-purchret"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Purchase Return
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle  flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Accounting</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-journal-voucher"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Journal Voucher
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle pl-4 flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Account Receivable</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-aradjust"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to make Adjustment
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-make-arpayment"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to make AR Payments
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle pl-4 flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Account Payable</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-suppinvoice"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Suppliers Invoice
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-make-apadjust"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Adjustments
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-apvoucher"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add AP Voucher
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-billspayment"
+        class="block pl-8 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Bills Payment
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-bank-deposit"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Bank Deposit
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle  flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Inventory</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-inventorycount"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Inventory Count
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-inventransfer"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Inventory Transfer
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-add-inventadjust"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to add Inventory Adjustment
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle  flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Reports</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-view-sales-report"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to view Sales
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-view-purchases-report"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to view Purchases
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-view-booksofacc"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to view Books of Account
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-view-bir-files-and-forms"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to view BIR Files and Forms
+        </a>
+    </li>                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-view-inventory-reports"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to view Inventory
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>                    <li class="list-none m-0 p-0">
+            
+        <div class="js-menu-toggle  flex items-center justify-between cursor-pointer px-4 py-3 border-b border-white/5 hover:bg-black/10 transition-colors text-white">
+            <span class="text-xs font-bold uppercase tracking-widest">Audit Trail</span>
+            <svg class="h-4 w-4 transition-transform duration-200 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+
+        <div class="child-menu hidden">
+            <ul class="list-none m-0 p-0">
+                                    <li class="list-none m-0 p-0">
+            
+        <a href="/docs/ph/how-to-view-audittrail"
+        class="block pl-4 px-4 py-2 text-sm text-white/80 hover:bg-white/10 transition-colors">
+            How to view Audit Trail
+        </a>
+    </li>                            </ul>
+        </div>
+    </li>            </ul>
+        </nav>
+
+        <section class="flex-1 flex flex-col overflow-y-auto">
+            <div class="flex-1 px-6 lg:px-12 py-10 bg-white">
+                <section class="container max-w-8xl mx-auto px-6 md:px-8 py-4 flex justify-center">
+    <div class="flex flex-col lg:flex-row w-full justify-center">
+        
+        <div class="DocSearch-content w-full lg:w-4/5 max-w-5xl break-words pb-16" v-pre>
+            <div class="prose max-w-none">
+                <h1>System Users</h1>
+
+<p>Ang mga System User ay nagtatakda ng mga awtorisadong account sa ERP system. Bawat user ay binibigyan ng partikular na access sa mga module at pahintulot (permissions) sa mga aksyon gaya ng view, add, edit, post, cancel, at print. Ang mga setting na ito ang nagkokontrol sa mga function na maaaring gamitin ng user upang masiguro ang seguridad at accountability sa system.</p>
+
+<hr />
+
+<h3>Paano Gumawa o Magdagdag ng Bagong User:</h3>
+
+<ol>
+<li>Pumunta sa <strong>Master Data Files</strong></li>
+<li>I-click ang <strong>System Users</strong></li>
+<li>I-click ang <strong>Create New (F1)</strong></li>
+<li>Ilagay ang mga detalye para sa bagong user.</li>
+<li>I-click ang <strong>Add User</strong></li>
+</ol>
+
+<p><img src="/assets/img/sysuser.png" alt="Navigating to System User" /></p>
+
+<hr />
+
+<h3>Paano I-set ang Access ng User:</h3>
+
+<ol>
+<li>Pumunta sa <strong>Master Data Files</strong></li>
+<li>I-click ang <strong>System Users</strong></li>
+<li>Pumili ng user at i-click ang <strong>pencil icon</strong> o ang Edit user's access.</li>
+<li>Piliin ang mga <strong>category</strong> kung saan magkakaroon ng access ang user.</li>
+<li>Kapag napili na ang category, lagyan ng check ang checkbox na tumutugma sa access ng user.</li>
+<li>Kung ang user ay may access sa lahat, i-tick lamang ang <strong>CHECK ALL</strong></li>
+<li>I-click ang <strong>Save (F2)</strong></li>
+</ol>
+
+<p><img src="/assets/img/sysuser1.png" alt="Navigating to System User" />
+<img src="/assets/img/sysuser2.png" alt="Navigating to System User" /></p>
+
+<hr />
+
+<h3>Paano I-reset ang Password ng User:</h3>
+
+<ol>
+<li>Pumunta sa <strong>Master Data Files</strong></li>
+<li>I-click ang <strong>System Users</strong></li>
+<li>I-click ang <strong>cycle icon</strong> o ang <strong>Reset</strong> user password.</li>
+</ol>
+
+<p><img src="/assets/img/sysuser3.png" alt="Navigating to System User" /></p>
+
+<hr />
+
+<h3>Paano Gawing Inactive ang User Access:</h3>
+
+<ol>
+<li>Pumunta sa <strong>Master Data Files</strong></li>
+<li>I-click ang <strong>System Users</strong></li>
+<li>I-click ang <strong>x icon</strong> o ang <strong>Inactive</strong> user access.</li>
+</ol>
+
+<p>Upang muling i-activate ang inactive na user, i-click lamang ang <strong>check icon</strong> o ang <strong>Activate</strong> user access.</p>
+
+<p><img src="/assets/img/sysuser4.png" alt="Navigating to System User" />
+<img src="/assets/img/sysuser5.png" alt="Navigating to System User" /></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* Zoomable Image Styling*/
+    .prose img { 
+        border-radius: 12px; 
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); 
+        border: 1px solid #e5e7eb; 
+        margin: 2.5rem 0; 
+        cursor: zoom-in !important;
+        transition: transform 0.2s ease;
+    }
+
+    .prose img:hover {
+        transform: scale(1.01);
+    }
+
+    /* Zoom Overlay Z-index */
+    .medium-zoom-overlay { z-index: 90; }
+    .medium-zoom-image--opened { z-index: 100; }
+</style>
+
+<script src="https://unpkg.com/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        mediumZoom('.prose img', {
+            margin: 24,
+            background: 'rgba(255, 255, 255, 0.95)',
+        });
+    });
+</script>
+            </div>
+
+           <footer class="bg-white border-t border-gray-100 py-6 mt-12">
+    <div class="container mx-auto px-6 text-center">
+        <p class="font-sora text-xs font-medium text-gray-400 tracking-wide">
+            © 2026 MyxFin. All rights reserved.
+        </p>
+    </div>
+</footer>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+
+    <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('lg:block');
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    }
+</script>
+
+    <script>
+    /** * SEARCH LOGIC (Fuse.js) 
+     */
+    (function() {
+        let fuse = null;
+
+        const loadSearchIndex = (retries = 5) => {
+            const v = Date.now();
+            fetch('/index.json?v=' + v)
+                .then(response => {
+                    if (!response.ok) throw new Error("HTTP " + response.status);
+                    return response.json();
+                })
+                .then(data => {
+                    if (data && data.length > 0) {
+                        fuse = new Fuse(data, {
+                            keys: ['title', 'snippet'],
+                            threshold: 0.4,
+                        });
+                        console.log("🚀 SEARCH READY: " + data.length + " items loaded.");
+                    } else if (retries > 0) {
+                        console.warn(`Index empty, retrying... (${retries} left)`);
+                        setTimeout(() => loadSearchIndex(retries - 1), 1000);
+                    }
+                })
+                .catch(err => {
+                    if (retries > 0) {
+                        setTimeout(() => loadSearchIndex(retries - 1), 1000);
+                    } else {
+                        console.error("Search index failed to load:", err);
+                    }
+                });
+        };
+
+        // Start loading the index 500ms after page load
+        setTimeout(loadSearchIndex, 500);
+
+        const performSearch = () => {
+            const searchInput = document.getElementById('js-search-input');
+            const searchResults = document.getElementById('js-search-results');
+
+            if (!fuse || !searchInput || !searchResults) return;
+
+            const query = searchInput.value.trim();
+            const results = fuse.search(query);
+            
+            // Detect current language
+            const currentPath = window.location.pathname;
+            const currentLang = (currentPath.includes('/ph/') || currentPath.includes('/docs/ph/')) ? 'ph' : 'en';
+
+            // Filter results by language
+            const filteredResults = results.filter(r => r.item.lang === currentLang);
+
+            if (query.length > 1 && filteredResults.length > 0) {
+                searchResults.innerHTML = filteredResults.slice(0, 5).map(r => {
+                    const link = r.item.link.startsWith('/') ? r.item.link : '/' + r.item.link;
+
+                    // Remove entire image markdown tag
+                    let cleanSnippet = r.item.snippet.replace(/!\[.*?\]\((.*?)\)/g, '');
+
+                    // Remove loose image/asset paths 
+                    cleanSnippet = cleanSnippet.replace(/\/[a-zA-Z0-9._/-]+\.(png|jpg|jpeg|svg|gif|webp)/gi, '');
+
+                    // Clean up remaining markdown symbols and double spaces
+                    cleanSnippet = cleanSnippet.replace(/[#*!\[\]\(\)]+/g, '')
+                        .replace(/\\r|\\n/g, ' ')
+                        .replace(/\s\s+/g, ' ');
+
+                    return `
+                <a href="${link}" class="block p-4 hover:bg-blue-50 no-underline group transition-all">
+                    <div class="flex items-center justify-between">
+                        <div class="font-bold text-[#3b82f6] text-sm group-hover:text-[#1d4ed8]">
+                            ${r.item.title.replace('#', '').trim()}
+                        </div>
+                        <svg class="h-3 w-3 text-gray-300 group-hover:text-[#3b82f6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="text-[12px] text-gray-500 line-clamp-2 mt-1 font-normal leading-relaxed">
+                        ${cleanSnippet.trim()}
+                    </div>
+                </a>
+            `;
+                }).join('');
+
+                searchResults.classList.remove('hidden');
+            } else {
+                searchResults.classList.add('hidden');
+            }
+        };
+
+        // Event delegation for input to match your js-search-input ID
+        document.addEventListener('input', (e) => {
+            if (e.target && e.target.id === 'js-search-input') {
+                performSearch();
+            }
+        });
+
+        // Clicking outside closes search
+        document.addEventListener('click', (e) => {
+            const searchInput = document.getElementById('js-search-input');
+            const searchResults = document.getElementById('js-search-results');
+            if (searchInput && searchResults && !searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                searchResults.classList.add('hidden');
+            }
+        });
+    })();
+
+    /** * SIDEBAR & LANGUAGE LOGIC 
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- 1. SIDEBAR MENU INITIAL STATE ---
+        const savedState = localStorage.getItem('myxfin_sidebar_state');
+        const allToggles = document.querySelectorAll('.js-menu-toggle');
+
+        if (savedState) {
+            const openIndexes = JSON.parse(savedState);
+            openIndexes.forEach(index => {
+                const activeToggle = allToggles[index];
+                if (activeToggle) {
+                    const activeMenu = activeToggle.nextElementSibling;
+                    if (activeMenu && activeMenu.classList.contains('child-menu')) {
+                        activeMenu.classList.remove('hidden');
+                        activeMenu.style.display = 'block';
+                        const arrow = activeToggle.querySelector('svg');
+                        if (arrow) arrow.style.transform = 'rotate(180deg)';
+                    }
+                }
+            });
+        } else {
+            const openMenus = document.querySelectorAll('.child-menu:not(.hidden)');
+            openMenus.forEach(menu => {
+                menu.style.display = 'block';
+                const toggle = menu.previousElementSibling;
+                if (toggle && toggle.classList.contains('js-menu-toggle')) {
+                    const arrow = toggle.querySelector('svg');
+                    if (arrow) arrow.style.transform = 'rotate(180deg)';
+                }
+            });
+        }
+
+       // --- 2. SMART LANGUAGE DROPDOWN LOGIC ---
+const langSelect = document.getElementById('language-select');
+
+if (langSelect) {
+    // 1. AUTOMATIC DETECTION ON LOAD
+    // This part makes the dropdown match the actual URL the user is seeing
+    const currentPath = window.location.pathname;
+    
+    if (currentPath.includes('/ph/') || currentPath.includes('/docs/ph/')) {
+        langSelect.value = 'tl';
+        localStorage.setItem('myxfin_lang', 'tl');
+    } else {
+        langSelect.value = 'en';
+        localStorage.setItem('myxfin_lang', 'en');
+    }
+
+    // 2. CHANGE EVENT (Manual switching)
+    langSelect.addEventListener('change', function() {
+        localStorage.setItem('myxfin_lang', this.value);
+        let path = window.location.pathname;
+
+        if (this.value === 'tl') {
+            // Redirect to Tagalog version
+            if (path === '/' || path === '/index.html') {
+                window.location.href = '/ph/';
+            } else if (path.includes('/docs/') && !path.includes('/docs/ph/')) {
+                window.location.href = path.replace('/docs/', '/docs/ph/');
+            }
+        } else {
+            // Redirect to English version
+            if (path.includes('/docs/ph/')) {
+                window.location.href = path.replace('/docs/ph/', '/docs/');
+            } else if (path.includes('/ph/')) {
+                window.location.href = '/';
+            }
+        }
+    });
+}
+    });
+
+    /** * SIDEBAR CLICK EVENTS 
+     */
+    document.addEventListener('click', function(e) {
+        const toggle = e.target.closest('.js-menu-toggle');
+        if (!toggle) return;
+
+        e.preventDefault();
+        const allToggles = Array.from(document.querySelectorAll('.js-menu-toggle'));
+        const parentLi = toggle.closest('li');
+        const currentChildMenu = parentLi.querySelector('.child-menu');
+
+        if (currentChildMenu) {
+            const isOpening = currentChildMenu.classList.contains('hidden');
+
+            // Toggle visibility
+            currentChildMenu.classList.toggle('hidden');
+            currentChildMenu.style.display = isOpening ? 'block' : 'none';
+
+            const arrow = toggle.querySelector('svg');
+            if (arrow) {
+                arrow.style.transition = 'transform 0.2s ease';
+                arrow.style.transform = isOpening ? 'rotate(180deg)' : 'rotate(0deg)';
+            }
+
+            if (isOpening && !toggle.closest('.child-menu')) {
+                const topLevelUl = toggle.closest('ul');
+                const topLevelMenus = topLevelUl.querySelectorAll(':scope > li > .child-menu');
+                topLevelMenus.forEach(menu => {
+                    if (menu !== currentChildMenu) {
+                        menu.classList.add('hidden');
+                        menu.style.display = 'none';
+                        const siblingToggle = menu.previousElementSibling;
+                        if (siblingToggle) {
+                            const siblingArrow = siblingToggle.querySelector('svg');
+                            if (siblingArrow) siblingArrow.style.transform = 'rotate(0deg)';
+                        }
+                    }
+                });
+            }
+
+            // SAVE STATE
+            const openIndexes = [];
+            allToggles.forEach((t, index) => {
+                const m = t.nextElementSibling;
+                if (m && m.style.display === 'block') {
+                    openIndexes.push(index);
+                }
+            });
+            localStorage.setItem('myxfin_sidebar_state', JSON.stringify(openIndexes));
+        }
+    });
+</script>

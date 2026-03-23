@@ -54,12 +54,14 @@ Ang **AR Ageing** report ay may mga espesyal na settings para sa mas maayos na p
 * **SI Date as Of:** Ito ang “cutoff” date kung saan binabase ang edad ng invoice.
 
 * **Ageing Periods:** Dito mo ise-set ang mga time brackets.
-    * **Desc:** Label (hal. "Current," "Overdue," "Critical").
-    * **From / To:** Range ng araw (hal. From 31 To 60).
 
-* **Management:**  
-    * Gamitin ang **Add Period** para magdagdag ng bagong bracket.  
-    * I-click ang **Save Settings** para mai-save ang configuration.
+    * Desc: Label (hal. "Current," "Overdue," "Critical").
+    * From / To: Range ng araw (hal. From 31 To 60).
+
+* **Management:**   
+
+    Gamitin ang **Add Period** para magdagdag ng bagong bracket.  
+    I-click ang **Save Settings** para mai-save ang configuration.
 
 ---
 

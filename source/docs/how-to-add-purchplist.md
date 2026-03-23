@@ -20,8 +20,9 @@ The Purchase Price List serves as the reference or initial purchase price of ite
 5. Enter the Supplier, Description and Effect Date. 
 6. Enter the product code or description. 
 7. Enter the amount of the price. 
-o Click **delete** to delete the item. 
 8. Click **Save (F2)**
+
+> Click **delete** to delete the item. 
 
 ![Navigating to Pplist](/assets/img/purchplist.png)
 ![Navigating to Pplist](/assets/img/purchplistt.png)

@@ -33,7 +33,9 @@ Ang "bank" ay tumutukoy sa mga financial institution kung saan ang negosyo ay ma
 2. I-click ang **Accounting Parameters** 
 3. I-click ang **Banks**
 4. Pumili ng bangko at i-click ang blue font text o ang Bank Code. 
-5. Kapag lumabas na ang bank details, i-click ang **Edit (CTRL+E)**. 
+
+5. Kapag lumabas na ang bank details, i-click ang **Edit (CTRL+E)**
+
 6. Ilagay ang mga bagong detalye ng bangko. 
 7. I-click ang **Save (CTRL+S)**
 

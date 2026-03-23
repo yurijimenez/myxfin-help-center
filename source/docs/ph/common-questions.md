@@ -156,3 +156,86 @@ section: content
         </div>
     </div>
 </div>
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Makikita ko ba kung sino ang gumawa o nag-edit ng transaction?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+           Oo. Karamihan sa mga transaction screen ay may "Audit Trail" o "Created By" label sa ibaba ng form. Dito makikita ang username at timestamp kung kailan huling ginalaw ang record.
+        </p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Nagkamali ako at na-"Void" ang isang tseke. Maaari ko ba itong i-"Un-void"?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+         Hindi. Kapag ang tseke ay na-void na, ito ay kanselado na para sa audit purposes. Kailangan mong gumawa ng "New Transaction" gamit ang bagong check number. Ginagawa ito para maiwasan ang fraud o dobleng paggamit ng tseke.
+        </p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Paano ko makikita ang aking "Top Selling Items"?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+        Pumunta sa Reports > Sales Reports > Sales Summary by Item. Gamitin ang date filters para makita kung aling mga items ang may pinakamataas na benta at profit margins.
+        </p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Bakit naka-grey at hindi mapindot ang "Save" button?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+        I-check kung may "Out of Balance" na amount, may kulang na mandatory fields (may markang *), o siguraduhing na-click mo muna ang "Edit" button.
+        </p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Bakit walang lumalabas na items sa "SI (Insert)" button?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+        Kailangan mo munang piliin ang "Customer Name" para ma-filter ang kanilang mga partikular na outstanding invoices.
+        </p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Ano ang ginagawa ng "Undo Edit"?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+        Kinakansela nito ang anumang pagbabagong ginawa mo mula nung pinindot mo ang "Edit" at ibinabalik ang form sa huling "saved state" nito.
+        </p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        <span>Bakit ako kusa nilo-log out ng system?</span>
+        <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+    <div class="faq-answer">
+        <p>
+        Para sa seguridad, ang MyxFin ay may "Auto-Logout timer" kapag ang system ay matagal na hindi ginagamit o idle.
+        </p>
+    </div>
+</div>

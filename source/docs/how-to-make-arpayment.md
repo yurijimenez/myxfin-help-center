@@ -7,35 +7,42 @@ section: content
 
 # AR Payment 
 
-AR (Accounts Receivable) Payment allows users to record and manage payments received from customers in MyxFin. This module ensures that customer payments are accurately reflected in your accounts receivable, helping maintain up-to-date financial records.
+AR (Accounts Receivable) Payment allows you to record and manage payments received from customers. This ensures that your customer ledgers are updated and that your cash-on-hand or bank balances reflect the collection.
+
+> 💡 **Note:**  Only transactions without reference or with cancelled reference to Deposits will be available for unposting.
 
 ---
 
-![Navigating to AR Payment](/assets/img/arpayment.png)
+### How to Create a New Transaction
 
-> 💡 **Take note:** Only transactions without reference or with cancelled reference to Deposits will be available for unposting. 
+1. Click the **Create New** button to open a new form. 
 
----
+2. **Choose Payment Method** Select how the customer paid (e.g., Cash, Check, or Bank Transfer) from the available methods.
 
-###  Create New Transaction:
+3. To add details, search for the customer first before clicking the SI (Insert) button.
+
+4. **Insert Sales Invoices (SI)** Click the **SI (Insert)** button to open the picklist of unpaid invoices.
+**In the Pop-up:** Check the box on the left side of the specific invoices being paid.
+**Apply:** Click the **Insert** button to bring them into the payment details.
+
+5. **Apply Adjustments (CM)** : **Automatic:** Any adjustments created for the selected Sales Invoice will be automatically added to the details.
+**Manual:** You can also click the **Manual Apply** button under the CM (Credit Memo) section to specifically link other AR Adjustments.
+
+6. **Save** Review the payment totals and click the **Save** button.
 
 ![Navigating to AR Payment](/assets/img/arpayment2.png)
-
-**Payment Methods** Available in the system 
-
-![Navigating to AR Payment](/assets/img/arpayment3.png)
-
-**Back to main** button > Go back to list (transaction won’t be save)
-To add details, search for the customer first before clicking the **SI (Insert)** button
-
-> 💡 **Take note:** All Adjustments created will be automatically added in the details upon selecting of the Sales Invoice in the picklist. 
-
 ![Navigating to AR Payment](/assets/img/arpayment4.png)
 
 ---
 
-### Editing a transaction 
+### How to Edit a Transaction
+
+1. **Open Record** From the main dashboard, click the **Transaction No.** of the payment you wish to change.
+
+2. **Enter Edit Mode** Click the **Edit** button to unlock the fields.
+
+3. **Modify Details** Update the payment amount or add/remove invoice references. The **Save** button will activate while in this mode.
+
+4. **Exit or Cancel** Click the **Undo Edit** button to discard changes, or **Back to Main** to return to the list without saving.
 
 ![Navigating to AR Payment](/assets/img/arpayment5.png)
-![Navigating to AR Payment](/assets/img/arpayment6.png)
-

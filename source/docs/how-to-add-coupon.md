@@ -33,11 +33,11 @@ To manually generate a new coupon:
 
 7.  **Sales Debit Account:** Select the account where the coupon value will be debited upon redemption.
 
-8.  **Coupon Days:** Enter the number of days the coupon remains valid **after activation**.
-
-*Example: If set to 30, the expiration is applied 30 days from the moment the coupon is triggered/used.*
+8.  **Coupon Days:** Enter the number of days the coupon remains valid **after activation**
 
 9.  Click **Save**
+
+*Example: If set to 30, the expiration is applied 30 days from the moment the coupon is triggered/used.*
 
 ---
 
@@ -68,7 +68,7 @@ For high-volume voucher generation, use the **Mass Upload** tool located in the 
 | **Price** | The actual monetary value deducted from the customer's total. |
 | **Barcode** | The unique string used to verify the coupon at checkout. |
 | **Sales Debit** | The GL account where the coupon value is debited. |
-| **Coupon Days** | The lifespan of the coupon; expiration starts **after activation**. |
+| **Coupon Days** | The lifespan of the coupon; expiration starts after activation. |
 
 ---
 

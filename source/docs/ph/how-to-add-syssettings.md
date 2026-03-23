@@ -43,7 +43,7 @@ Ang functionality na ito ay sumusunod sa mga requirement ng **BIR CAS** pagdatin
 1. Pumunta sa **Master Data Files** 
 2. I-click ang **System Setup**
 3. I-click ang **Parameters**
-4. Piliin ang **Automatic** o **Manual** mula sa drop-down options.
+4. Piliin ang Automatic o Manual mula sa drop-down options.
 
 ![Navigating to System Settings](/assets/img/sysettings2.png)
 
@@ -54,7 +54,9 @@ Ang functionality na ito ay sumusunod sa mga requirement ng **BIR CAS** pagdatin
 1. Pumunta sa **Master Data Files** 
 2. I-click ang **System Setup**
 3. I-click ang **Parameters**
+
 4. I-click ang **Add** upang magdagdag ng bagong field o i-edit ang Description ng kasalukuyang field. 
+
 5. I-click ang **Save Contact Details** upang i-save ang mga pagbabago. 
 
 > ✔️ Maaari mo ring i-activate o i-deactivate ang isang field sa pamamagitan ng pag-click sa button sa kanang bahagi.   

@@ -7,37 +7,39 @@ section: content
 
 # Suppliers Invoice
 
-![Navigating to SupplierInvoice](/assets/img/suppinvoice.png)   
+![Navigating to SupplierInvoice](/assets/img/suppinvoice.png)
 
-> ✔️  Only transactions without reference or with cancelled reference in AP Voucher and Adjustment will be available for un-posting.  
+> ✔️ Only transactions without reference or with cancelled reference in AP Voucher and Adjustment will be available for un-posting.
 
-### Create New Transaction: 
+### How to Create a New Transaction
 
-![Navigating to SupplierInvoice](/assets/img/suppinvoice1.png)  
+   ![Navigating to SupplierInvoice](/assets/img/suppinvoice1.png)
+   ![Navigating to SupplierInvoice](/assets/img/suppinvoice2.png)
 
-**Enter** the supplier first before adding items or picking the reference RR. 
+1. **Click the Create Button** Start by clicking the `+ Create` button located at the top right of the module to open a fresh invoice form.
 
-**Click** the search button to insert the reference receiving transaction.
+2. **Select the Supplier** **Enter** the supplier details first. This must be done before adding items or picking a reference RR to ensure the data maps correctly.
 
-You can also create suppliers invoice by manually adding **NON-INVENTORIABLE** items like services. 
+3. **Insert Reference (Optional)** **Click** the `Search` button to pull in a reference receiving transaction (RR).
 
-You can still edit the price for any adjustment.
+4. **Add Items Manually** You can also create an invoice by manually adding **NON-INVENTORIABLE** items, such as services.
 
-> Upon clicking the search button.
+5. **Adjust Pricing** If necessary, you can still edit the unit price for any final adjustments before saving.
 
 ---
 
-### Editing a transaction:
+### How to Edit a Transaction
 
-![Navigating to SupplierInvoice](/assets/img/suppinvoice2.png) 
+If you need to make changes to an existing invoice, follow these steps:
 
-**Click** edit to activate the form for editing.
+1. **Enter Edit Mode** Click the `Edit` button to unlock the form fields.
 
-Be sure your details have corresponding **account titles**
+2. **Verify Account Titles** Ensure all line items have their corresponding **account titles** assigned; otherwise, the transaction may not post correctly.
 
-**Red Button** > Click to cancel editing.
+3. **Save or Cancel** 
 
-When the form is in editing mode **Save button** will activate.
+* **Save Button:** Click this once you have finished your changes (only active in Edit Mode).
 
+* **Red Button:** Click this if you wish to **discard changes** and exit edit mode.
 
 

@@ -7,25 +7,36 @@ section: content
 
 # Sales Invoice
 
-![Navigating to Sales Invoice](/assets/img/salesinvoice.png)
-![Navigating to Sales Invoice](/assets/img/salesinvoice1.png)
+The Sales Invoice module allows you to bill customers for goods delivered or services rendered. This updates your accounts receivable and links directly to previous delivery or billing records.
 
-> 💡 **Take note:**  Only transactions without reference or with cancelled reference to Adjustments and receive payment will be available for un-posting.   
+> 💡 **Note:** Transactions can only be unposted if they have no active references (or cancelled references) in **Adjustments** or **Receive Payment**.
 
 ---
 
-### Create New Transaction :
+### How to Create a New Transaction
+
+1. **Start the Invoice**: Click the **Create New** button to open a new form.
+
+2. **Choose your Source Reference**: Depending on what you are invoicing, select the appropriate reference type. For Services > Choose **Billing** or **Sales Order**. For Goods > Choose **Delivery**.
+
+3. **Select the Transaction**: Click on the specific **Transaction No.** from the list to view available items.
+
+4. **Pick Items**: Check the boxes on the left side of the items you wish to include in this invoice, then click **Insert**.
+
+5. **Finalize & Save**: Review the totals and click the **Save** button.
 
 ![Navigating to Sales Invoice](/assets/img/salesinvoice2.png)
-
-> ✔️ In inserting the details, you can choose if it will come from Billing or Sales Order (for Services) and from Delivery (for Goods).
-
 ![Navigating to Sales Invoice](/assets/img/salesinvoice3.png)
 
 ---
 
-### Editing a transaction 
+### How to Edit a Transaction
+
+1. **Enter Edit Mode**: Click the **Edit** button to unlock the transaction fields.
+
+2. **Modify Details**: Remove Items > Click the **Remove/Delete** button next to a line item to take it off the invoice. Update Fields > The **Save** button will activate only while you are in editing mode.
+
+3. **Review Accounting** After saving, you can click the **Accounting Entry** button to view the journal entries generated for this invoice.
 
 ![Navigating to Sales Invoice](/assets/img/salesinvoice4.png)
 ![Navigating to Sales Invoice](/assets/img/salesinvoice5.png)
-

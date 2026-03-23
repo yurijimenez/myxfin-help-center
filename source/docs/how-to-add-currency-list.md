@@ -29,10 +29,15 @@ currency usage across sales, purchasing, and accounting modules.
 ### How to Update the Currency List
 
 1. Go to **Master Data** Files. 
+
 2. Click **Accounting Parameters** 
+
 3. Click **Currency List**
-4. Select a currency and**click**the blue font text or Currency Code. 
+
+4. Select a currency and **click** the blue font text or Currency Code.  
+
 5. Enter the new details of the currency. 
+
 6. Click **Update** Detail 
 
 ![Navigating to Currency List](/assets/img/cur1.png)

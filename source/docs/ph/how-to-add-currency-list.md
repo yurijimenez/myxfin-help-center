@@ -26,11 +26,16 @@ Ang Currency List ay nagsisilbing reference file para sa mga multi-currency tran
 
 ### Paano Mag-update ng Currency List:
 
-1. Pumunta sa **Master Data Files**
+1. Pumunta sa **Master Data Files** 
+
 2. I-click ang **Accounting Parameters**
+
 3. I-click ang **Currency List**
+
 4. Pumili ng currency at **i-click** ang blue font text o ang Currency Code. 
+
 5. Ilagay ang mga bagong detalye ng currency. 
+
 6. I-click ang **Update Detail**
 
 ![Navigating to Currency List](/assets/img/cur1.png)

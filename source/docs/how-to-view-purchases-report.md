@@ -34,10 +34,11 @@ Most reports in this module use the following filters:
 
 * **Supplier Name:** Search for a specific vendor.
 * **Product:** Filter by a specific item.
-* **Transaction Type:** Toggle between *All Transactions*, *Posted*, or *Unposted*.
+* **Transaction Type**: Toggle between*All Transactions*,*Posted*,*Unposted*.
 * **Date Range:** Select the start and end dates.
 
-**Actions:**
+### **Actions:**
+
 * **View Report (Red Button):** Displays the report on the screen.
 * **To Excel (Green Button):** Exports the data to a spreadsheet.
 
@@ -45,6 +46,9 @@ Most reports in this module use the following filters:
 
 ### 3. AP Ageing Parameters
 The **AP Ageing** report requires specific setup to calculate your liabilities correctly.
+
+![Sales Order Report Filter](/assets/img/prreport1.png)
+*Figure 2: AP Ageing Parameters.*
 
 #### Key Parameters:
 * **SI Date as Of:** The reference date used to calculate the age of the invoice.

@@ -89,7 +89,7 @@ return [
     'Accounting' => [
     'url' => '#',
     'children' => [
-        'How to add Journal Voucher' => 'docs/how-to-add-journal-voucher',
+        'How to add Journal Voucher' => 'docs/how-to-add-journalvoucher',
 
         'Account Receivable' => [
             'url' => '#',

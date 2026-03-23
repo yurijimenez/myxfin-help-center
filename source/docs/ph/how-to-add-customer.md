@@ -29,7 +29,9 @@ Ang Customers List ay nagsisilbing sentralisadong record ng impormasyon ng mga c
 2. I-click ang **Customers**
 3. I-click ang **Master List**
 4. Pumili ng customer at i-click ang blue font text o ang Customer Code. 
+
 5. Kapag lumabas na ang Client Details, i-click ang **Edit (CTRL+E)**
+
 6. Ilagay ang mga bagong detalye ng customer. 
 7. I-click ang **Save (CTRL+S)**
 

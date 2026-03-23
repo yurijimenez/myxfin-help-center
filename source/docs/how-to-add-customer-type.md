@@ -40,7 +40,7 @@ Customer Type in MyxFin allows users to categorize customers based on specific a
 1. Go to **Master Data** Files. 
 2. Click **Customers**
 3. Click **Types**
-4. Click the **yellow cycle** icon or **Inactive**.
+4. Click the **yellow cycle** icon or **Inactive**
 
 a. Click the **green cycle** icon or **Active** to activate the item. 
 

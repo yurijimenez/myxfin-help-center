@@ -4,7 +4,8 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "prod": "vite build --mode production"
+        "prod": "vite build --mode production",
+        "deploy": "npm run prod && if exist public_html (rmdir /s /q public_html) && mkdir public_html && xcopy /e /i build_production public_html"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.1.8",

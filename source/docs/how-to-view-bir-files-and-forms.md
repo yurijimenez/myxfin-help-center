@@ -13,7 +13,7 @@ This module allows users to generate tax-compliant files and forms required for 
 
 ---
 
-| Report/Form Name | Purpose |
+| Report Name | Purpose |
 | :--- | :--- |
 | **BIR Sales Relief** | Summary List of Sales (SLS) for VAT-registered taxpayers. |
 | **BIR Purchase Relief** | Summary List of Purchases (SLP) for VAT-registered taxpayers. |

@@ -12,15 +12,15 @@
     <meta property="og:title" content="{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}" />
     <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
     <meta property="og:url" content="{{ $page->getUrl() }}" />
-    <meta property="og:image" content="/assets/img/MyxFinlogo.png" />
+    <meta property="og:image" content="/assets/img/myxfinlogo.png" />
     <meta property="og:type" content="website" />
     {{-- 3. TITLE & ICONS: What you see on the Browser Tab --}}
     <title>{{ $page->siteName }}{{ $page->title ? ' | ' . $page->title : '' }}</title>
 
     <link rel="home" href="{{ $page->baseUrl }}">
 
-    <link rel="icon" type="image/png" href="/assets/img/MyxFinlogo.png">
-    <link rel="icon" type="image/png" href="/assets/img/MyxFinlogo.png?v=1">
+    <link rel="icon" type="image/png" href="/assets/img/myxfinlogo.png">
+    <link rel="icon" type="image/png" href="/assets/img/myxfinlogo.png?v=1">
 
     @stack('meta')
 
@@ -45,7 +45,7 @@
     <header class="h-16 shrink-0 sticky top-0 z-50 flex items-center justify-between bg-white border-b px-4">
         <div class="flex items-center">
             <a href="/" class="inline-flex items-center no-underline">
-                <img class="h-10 mr-2 w-auto" src="/assets/img/MyxFinlogo.png" alt="logo" />
+                <img class="h-10 mr-2 w-auto" src="/assets/img/myxfinlogo.png" alt="logo" />
                 <h1 class="text-lg md:text-2xl text-[#3b82f6] font-semibold my-0">
                     {{ $page->siteName }}
                 </h1>
@@ -166,9 +166,16 @@
 
             const query = searchInput.value.trim();
             const results = fuse.search(query);
+            
+            // Detect current language
+            const currentPath = window.location.pathname;
+            const currentLang = (currentPath.includes('/ph/') || currentPath.includes('/docs/ph/')) ? 'ph' : 'en';
 
-            if (query.length > 1 && results.length > 0) {
-                searchResults.innerHTML = results.slice(0, 5).map(r => {
+            // Filter results by language
+            const filteredResults = results.filter(r => r.item.lang === currentLang);
+
+            if (query.length > 1 && filteredResults.length > 0) {
+                searchResults.innerHTML = filteredResults.slice(0, 5).map(r => {
                     const link = r.item.link.startsWith('/') ? r.item.link : '/' + r.item.link;
 
                     // Remove entire image markdown tag

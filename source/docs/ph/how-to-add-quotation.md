@@ -1,51 +1,72 @@
 ---
 title: Quotation
-description: Isang step-by-step na gabay sa pag-aayos ng iyong mga Quotation sa MyxFin.
+description: Step-by-step na gabay sa pamamahala ng iyong accounts sa MyxFin.
 extends: _layouts.documentation
 section: content
 ---
 
 # Quotation
 
-![Navigating to Quotation](/assets/img/quotation.png)
-![Navigating to Quotation](/assets/img/quotation1.png)
+Ang Quotation module ay ginagamit upang magbigay ng cost estimates sa mga customer o para mag-set up ng recurring billing para sa mga serbisyo. Ang mga dokumentong ito ay nagsisilbing pangunahing reference sa paggawa ng **Sales Orders** o final **Sales Invoices**.
 
-### Paggawa ng Bagong Transaksyon:
+---
 
-> ✔️ **b. Quote** > Ginagamit upang gumawa ng quotation para sa iyong mga customer. > Maaaring gamitin bilang reference sa paggawa ng Sales Order.
+### Paano Gumawa ng Bagong Transaksyon
 
-> ✔️ **c. Billing** > Maaaring gamitin kung ikaw ay nag-aalok ng mga serbisyo na kailangang i-bill buwan-buwan. > Maaaring gamitin bilang reference sa paggawa ng final Sales Invoice.
+1. **Simulan ang Entry**  
+I-click ang **Create New** button upang buksan ang form.
+
+2. **Piliin muna ang Customer**  
+Hanapin at piliin ang **Customer** bago magdagdag ng anumang line items.
+
+3. **Piliin ang Sales Type**  
+Gamitin ang dropdown menu upang piliin ang **Sales Type** na konektado sa iyong mga items.
+
+4. **Piliin ang Layunin ng Dokumento** > Quote: Gamitin para sa karaniwang estimates. Maaari itong gawing reference sa paggawa ng **Sales Order**. Billing: Gamitin para sa monthly service offerings. Maaari itong gawing reference sa paggawa ng final **Sales Invoice**.
+
+5. **Magdagdag ng Items**  
+I-type ang **Item Code** o **Description** sa details section upang maidagdag ang mga items.
+
+6. **I-save**  
+I-review ang detalye at i-click ang **Save** button.
 
 ![Navigating to Quotation](/assets/img/quotation2.png)
 ![Navigating to Quotation](/assets/img/quotation3.png)
 
---- 
+---
 
-### Pag-edit ng Transaksyon
+### Paano Mag-edit ng Transaksyon
 
-> ✔️ Maaari mong i-edit ang isang transaksyon hangga't hindi pa ito naka-post o cancelled.
+> ✔️ **Tandaan:** Maaari mong i-edit ang isang transaksyon hangga’t hindi pa ito napo-post o nakacancel.
 
-1. Pumunta sa **Sales & Delivery** 
-2. I-click ang **Sales Order**
-4. I-click ang **Create New (F1)** 
-5. Ilagay ang mga detalye ng bagong transaksyon. 
-6. I-click ang **Save (CTRL+S)**
+1. **Pumasok sa Edit Mode**  
+I-click ang **Edit** button upang ma-activate ang form.
 
-![Navigating to Quotation](/assets/img/quotation4.png)
+2. **Baguhin ang Mga Detalye**  
+I-update ang customer info, items, o quantities.
 
-> ✔️ Upang magamit ang **Send Email** button, dapat kang maglagay ng valid na email address sa kaukulang text box.
-
-![Navigating to Quotation](/assets/img/quotation5.png)
+3. **I-save ang Mga Pagbabago**  
+Habang nasa editing mode, magiging active ang **Save** button. I-click ito upang ma-finalize.
 
 ---
 
+### Pagpapadala at Approval
+
+* **Send Email:** Para ma-activate ang **Send Email** button, kailangan mong maglagay ng valid email address sa recipient text box.
+
+* **Bulk Approval:** Upang ma-approve ang maraming quotes nang sabay-sabay, i-check ang mga box katabi ng mga transaksyon sa listahan at i-click ang **Approve Transaction**.
+
+![Navigating to Quotation](/assets/img/quotation5.png)
 ![Navigating to Quotation](/assets/img/quotation6.png)
 
-**Lagyan ng check** ang mga transaksyong kailangang aprubahan at i-click ang **Approve Transaction**
+---
 
-**Recurring Transactions** – Ang mga recurring transaction ay ginagamit upang awtomatikong makagawa ng maraming transaksyon nang sabay-sabay. Nakakatipid ito sa oras sa pamamagitan ng pag-automate ng mga rutinang pag-encode na kailangang gawin nang tuloy-tuloy base sa piniling recur type.
+### Recurring Transactions
+
+Ang recurring transactions ay nakakatulong makatipid ng oras sa pamamagitan ng awtomatikong pag-generate ng maraming entries batay sa iskedyul (hal., monthly billing).
+
+1. Itakda ang **Recur Type** (Weekly, Monthly, atbp.).
+
+2. Awtomatikong gagawa ang system ng mga transaksyon ayon sa nakatakdang routine.
 
 ![Navigating to Quotation](/assets/img/quotation7.png)
-![Navigating to Quotation](/assets/img/quotation8.png)
-
-> ✔️ Ang Recurring Transactions ay awtomatikong gumagawa ng maraming transaksyon sa isang pindutan lamang.

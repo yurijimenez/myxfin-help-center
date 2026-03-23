@@ -7,46 +7,58 @@ section: content
 
 # Quotation
 
-![Navigating to Quotation](/assets/img/quotation.png)
-![Navigating to Quotation](/assets/img/quotation1.png)
+The Quotation module is used to provide cost estimates to customers or to set up recurring billing for services. These documents serve as the primary reference for creating **Sales Orders** or final **Sales Invoices**.
 
-### Create New Transaction:
+---
 
-> ✔️ b. Quote > Used to create a quota on to for your customers > Can be a reference in creatingng Sales Order  
+### How to Create a New Transaction
 
-> ✔️ c. Billing  > Can be used if you are offering services to your clients that you can bill monthly. > Can be a reference in creating The final sales invoice. 
+1. **Start the Entry** Click the **Create New** button to open the form.
+
+2. **Select Customer First** Search for and select the **Customer** before adding any line items.
+
+3. **Select Sales Type** Use the dropdown menu to choose the **Sales Type** connected to your items.
+
+4. **Choose Document Purpose** > Quote: Use this for standard estimates. These can be referenced later to create a **Sales Order**. Billing: Use this for monthly service offerings. These can be referenced later to create the final **Sales Invoice**.
+
+5. **Add Items** Type the **Item Code** or **Description** in the details section to add your items.
+
+6. **Save** Review the details and click the **Save** button.
 
 ![Navigating to Quotation](/assets/img/quotation2.png)
 ![Navigating to Quotation](/assets/img/quotation3.png)
 
---- 
+---
 
-### Editing a transaction
+### How to Edit a Transaction
 
-> ✔️ You can edit a transaction as long as it is not yet posted or cancelled. 
+> ✔️ **Note:** You can edit a transaction as long as it has not been posted or cancelled.
 
-1. Go to **Sales & Delivery**. 
-2. Click **Sales Order**. 
-4. Click **Create New (F1)**. 
-5. Enter the details of the new transaction. 
-6. Click **Save (CTRL+S)**.
+1. **Enter Edit Mode** Click the **Edit** button to activate the form.
 
-![Navigating to Quotation](/assets/img/quotation4.png)
+2. **Modify Details** Update the customer info, items, or quantities.
 
-> ✔️ To activate the Send Email button, you must enter a valid email in the email address text box.  
-
-![Navigating to Quotation](/assets/img/quotation5.png)
+3. **Commit Changes** While in editing mode, the **Save** button will activate. Click it to finalize.
 
 ---
 
+### Sending & Approvals
+
+* **Send Email:** To activate the **Send Email** button, you must enter a valid email address in the recipient text box.
+
+* **Bulk Approval:** To approve multiple quotes at once, check the boxes next to the transactions in the list and click **Approve Transaction**.
+
+![Navigating to Quotation](/assets/img/quotation5.png)
 ![Navigating to Quotation](/assets/img/quotation6.png)
 
-**Check** transactions to be approved and click Approve Transaction.
+---
 
-**Recurring Transactions**–recurring transactions are used to automa cally generate multiple transactions at a me. It saves me by automa ng rou nary task of encoding transac ons that needs to be con nuously encoded depends on the recur type. 
+### Recurring Transactions
+
+Recurring transactions save time by automatically generating multiple entries based on a schedule (e.g., monthly billing).
+
+1. Set the **Recur Type** (Weekly, Monthly, etc.).
+
+2. The system will automatically generate the transactions according to the routine task settings.
 
 ![Navigating to Quotation](/assets/img/quotation7.png)
-![Navigating to Quotation](/assets/img/quotation8.png)
-
-> ✔️ Recurring Transactions automatically generate multiple transactions at a time. 
-

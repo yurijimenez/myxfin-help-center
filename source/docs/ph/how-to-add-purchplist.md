@@ -22,7 +22,7 @@ Ang Purchase Price List ay nagsisilbing reference o initial purchase price ng mg
 7. Ilagay ang halaga (amount) ng presyo. 
 8. I-click ang **Save (F2)**
 
-* I-click ang **delete** para tanggalin ang item. 
+> I-click ang **delete** para tanggalin ang item. 
 
 ![Navigating to Pplist](/assets/img/purchplist.png)
 
@@ -38,5 +38,5 @@ Ang Purchase Price List ay nagsisilbing reference o initial purchase price ng mg
 6. Ilagay ang mga bagong detalye ng price matrix. 
 7. I-click ang **Save (CTRL+S)**
 
-![Navigating to Pplist](/assets/img/purchplist1.png)
 ![Navigating to Pplist](/assets/img/purchplist2.png)
+![Navigating to Pplist](/assets/img/purchplist22.png)

@@ -7,33 +7,38 @@ section: content
 
 # Purchase Request
 
-Purchase Request (PR) in MyxFin allows users to request items or services needed by the business before creating a purchase order. This module helps streamline the procurement process by tracking requests, ensuring that approvals and records are properly managed.
+The Purchase Request (PR) module allows you to request items or services before a formal Purchase Order is created. This ensures all procurement is tracked and approved.
+
+> 💡 **Note:** Transactions can only be voided if they have no reference (or a cancelled reference) to a Purchase Order.
 
 ---
 
-![Navigating to PR](/assets/img/pr.png)
-![Navigating to PR](/assets/img/pr1.png)
+### How to Create a New Transaction
 
-> 💡 **Take note:** Only transactions without reference or with cancelled reference to Purchase Order will be available for voiding. 
+1. **Start the Request**: Click the **Create New** button to open the form.
 
----
+2. **Assign Section**: Select the appropriate **Search Section** to identify which department is making the request.
 
-### Create New Transaction:
+3. **Set Deadlines**: Use the **Date Needed** picker to specify when the items or services are required.
+
+4. **Add Items**: Type the **Item Code** or **Description** in the details section to add items to your request.
+
+5. **Finalize**: Review your list and click the **Save** button.
 
 ![Navigating to PR](/assets/img/pr2.png)
 ![Navigating to PR](/assets/img/pr3.png)
 
 ---
 
-### Editing a Transaction:
+### How to Edit a Transaction
 
-> ✔️ You can edit a transaction as long as it is not yet posted or cancelled.    
+> ✔️ **Editing Tip:** You can modify a transaction as long as it has not been posted or cancelled.
+
+1. **Enter Edit Mode**: Click the **Edit** button to unlock the form.
+
+2. **Make Changes**: Update your item quantities, descriptions, or required dates.
+
+3. **Save or Discard**: **Save Button>** Becomes active only while in editing mode. Click to commit changes. **Undo Edit>** Click this to cancel your changes and revert to the previous saved state.
 
 ![Navigating to PR](/assets/img/pr4.png)
 ![Navigating to PR](/assets/img/pr5.png)
-
-1. **Undo Edit** button to cancel editing.
-2. When the form is in editing mode Save button will activate.
-
----
-

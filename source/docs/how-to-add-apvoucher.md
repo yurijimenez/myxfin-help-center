@@ -6,35 +6,51 @@ section: content
 ---
 
 # AP Voucher
-AP Voucher (Accounts Payable Voucher) is used to record and manage payments to vendors in MyxFin. This feature allows users to create new vouchers, track payments, and adjust or void transactions as needed. AP Vouchers help ensure that all vendor-related payments are properly documented and that accounts payable records are accurate.
+
+The AP Voucher (APV) is used to officially record and manage payables to your vendors. This ensures that all obligations are documented, tracked, and ready for payment processing.
+
+> 💡 **Note:** Transactions can only be voided if they have no active references (or cancelled references) in **Bills Payment**.
 
 ---
 
-![Navigating to AP Voucher](/assets/img/apvouch.png) 
+### How to Create a New Transaction
 
-> 💡 **Take note:** Only transactions without reference or with cancelled reference in Bill Payment will be available for voiding. 
+1. **Start the Voucher**  
+Click the **Create New** button to open a new form.
 
---- 
+2. **Select Supplier**  
+Search for and select the **Supplier** name first.
 
-### Create New Transaction:
+3. **Select AP Type**  
+Choose the category that matches your transaction.  
+**Purchases (Credit)** – For goods/services already delivered.  
+**Purchases (Advance)** – For payments made before delivery.  
+**EWT Remittance** – To reference EWT transactions from APV, Bills Payment, or JV.  
+**Petty Cash / Others** – For manual accounting entries or other payables.
 
-**AP TYPE**
+4. **Open Reference Window**  
+Click the **Insert** button to search for pending transactions associated with the selected Supplier and AP Type.
 
-**Purchases (Credit)**– For Purchases paid a er delivery of goods.
+5. **Select Transactions**  
+Inside the pop-up window, check the boxes for the invoices or receipts you want to include, then click **Insert** to move them into the main voucher details.
 
-**Purchases (Advance Payment)**– For Purchases paid before delivery of goods.
+6. **Save**  
+Review the accounting entries and totals, then click the **Save** button.
 
-**EWT Remitance**– For creating APV referencing all the EWT Transactions for APV, Bills
-Payment, and JV.
-
-**Petty Cash Replenishment / Others** – For other payables, manual accounting Entry 
-
-![Navigating to AP Voucher](/assets/img/apvouch2.png) 
+![Navigating to AP Voucher](/assets/img/apvouch2.png)
 
 ---
 
-###  Editing a Transaction:
+### How to Edit a Transaction
 
-![Navigating to AP Voucher](/assets/img/apvouch3.png) 
-![Navigating to AP Voucher](/assets/img/apvouch4.png) 
+1. **Select Transaction**  
+From the main dashboard, click the **Transaction No.** of the voucher you want to update.
 
+2. **Activate Edit Mode**  
+Click the **Edit** button to unlock the fields.
+
+3. **Modify & Save**  
+Update the AP Type or edit the line items. Once done, click **Save** to finalize your changes.
+
+![Navigating to AP Voucher](/assets/img/apvouch3.png)
+![Navigating to AP Voucher](/assets/img/apvouch4.png)

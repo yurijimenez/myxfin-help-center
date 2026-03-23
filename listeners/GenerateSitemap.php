@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Listeners;
+namespace listeners;
 
 use Illuminate\Support\Str;
 use samdark\sitemap\Sitemap;

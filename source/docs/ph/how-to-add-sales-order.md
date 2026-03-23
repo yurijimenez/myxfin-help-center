@@ -23,6 +23,7 @@ section: content
 *Figure 1: Create, Void, at Batch Approval.*
 
 1. I-click ang **Red Button** para i-void ang isang transaksyon.
+
 2. I-click ang **Green Button** para i-approve ang isang transaksyon. 
 
 3. Ginagamit ang **Filtering parameters** para maghanap o i-filter ang iyong data.
@@ -34,7 +35,9 @@ section: content
 ![SO TABLE](/assets/img/so2.png)
 
 1. I-click ang **transaction no.** para mag-edit.
+
 2. I-click ang **Green Like** para mag-approve ng transaksyon.
+
 3. I-click ang **Red Like** para mag-cancel ng transaksyon.
 
 ---
@@ -52,9 +55,9 @@ section: content
 
 4. I-click ang **Green Button** para i-save ang transaksyon.
 
-5. I-click ang **Blue Button** para bumalik sa listahan (hindi mase-save ang transaksyon).
+5. I-click ang **Back to main** para bumalik sa listahan (hindi mase-save ang transaksyon).
 
-6. I-click ang **Light Blue Button** para magdagdag ng mga item base sa isang quote.
+6. I-click ang **Quote Insert** para magdagdag ng mga item base sa isang quote.
 
 > 💡 **Tandaan:** > **Order Details Customer** > ang customer na sisingilin o lalabas sa Sales Invoice.
 > **Delivered To Customer** > ang customer na tatanggap ng delivery o lalabas sa Delivery Receipt.
@@ -71,7 +74,7 @@ section: content
 
 ![Pag-edit ng SO](/assets/img/so7.png)
 
-1. **Light Blue button** > i-click para magdagdag ng higit pang mga item base sa isang quote.
+1. **Quote Insert** > i-click para magdagdag ng higit pang mga item base sa isang quote.
 
 2. **Red button (Undo Edit)** > i-click para ikansela ang pag-edit.
 

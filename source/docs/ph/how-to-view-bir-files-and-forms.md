@@ -13,13 +13,13 @@ Ang module na ito ay nagbibigay-daan sa mga user na makagawa ng mga tax-complian
 
 ---
 
-| Report/Form Name | Layunin |
+| Report Name | Layunin |
 | :--- | :--- |
-| **BIR Sales Relief** | Summary List of Sales (SLS) para sa VAT-registered taxpayers. |
-| **BIR Purchase Relief** | Summary List of Purchases (SLP) para sa VAT-registered taxpayers. |
-| **BIR QAP** | Quarterly Alphabetical List of Payees para sa creditable income taxes withheld. |
-| **BIR SAWT** | Summary Alphalist of Withholding Taxes (ginagamit para sa pag-claim ng tax credits). |
-| **BIR Forms** | Opisyal na tax forms (hal. 2550Q, 1601EQ) para sa review at filing. |
+| **BIR Sales Relief** | Talaan ng Kabuuang Benta (SLS) para sa mga VAT-registered na taxpayer. |
+| **BIR Purchase Relief** | Talaan ng Kabuuang Binili (SLP) para sa mga VAT-registered na taxpayer. |
+| **BIR QAP** | Quarterly Alphabetical List ng mga Payee para sa creditable income taxes na na-withhold. |
+| **BIR SAWT** | Summary Alphalist ng Withholding Taxes (ginagamit sa pag-claim ng tax credits). |
+| **BIR Forms** | Mga opisyal na tax forms (hal. 2550Q, 1601EQ) para sa pagsusuri at pagfa-file. |
 
 ---
 
@@ -30,7 +30,7 @@ Para sa karamihan ng BIR-related files, kailangan mong itakda ang mga sumusunod 
 
 * **Year:** Ilagay ang fiscal year para sa filing.
 
-* **RDO Type:** Piliin ang iyong rehistradong **Revenue District Office** code mula sa dropdown (hal. *001: Laoag City, 003: San Fernando*, atbp.).
+* **RDO Type:** Piliin ang iyong rehistradong **Revenue District Office** code mula sa dropdown (hal. **001: Laoag City, 003: San Fernando**, atbp.).
 
 ---
 

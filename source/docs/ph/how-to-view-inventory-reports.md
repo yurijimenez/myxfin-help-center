@@ -14,9 +14,7 @@ Ang **Inventory module** ay nagbibigay ng central na view ng iyong stock levels 
 ### 1. Inventory Summary Report
 Ang report na ito ay nagbibigay ng kumpletong overview ng kasalukuyang stock on hand upang masubaybayan ang availability at galaw ng inventory.
 
-| Report Name | Layunin |
-| :--- | :--- |
-| **Inventory Summary** | Ipinapakita ang kasalukuyang stock levels, quantities, at values sa iba't ibang sections. |
+**Inventory Summary** > Ipinapakita ang kasalukuyang stock levels, quantities, at values sa iba't ibang sections. 
 
 ---
 
@@ -27,12 +25,12 @@ Para makabuo ng tamang inventory view, i-configure ang mga sumusunod na filters:
 
 * **Section:** Piliin ang specific na department o location na gusto mong i-audit.  
 
-    * **Halimbawa:** `DEVELOPERS`, `TECH SUPPORT`, `TECHNICAL DEPARTMENT`, `STORE 1`, `CAFE`, atbp.
+**Halimbawa:** `DEVELOPERS`, `TECH SUPPORT`, `TECHNICAL DEPARTMENT`, `STORE 1`, `CAFE`, atbp.
 
 ---
 
 ### 3. Action Buttons
-* **View Report:** I-click ang button na ito upang ipakita ang inventory data sa screen.
+**View Report:** I-click ang button na ito upang ipakita ang inventory data sa screen.
 
 ![Inventory Reports](/assets/img/inventreport1.png)
 

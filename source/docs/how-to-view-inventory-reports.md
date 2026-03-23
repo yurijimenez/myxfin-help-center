@@ -14,9 +14,7 @@ The Inventory module provides a centralized view of your stock levels and asset 
 ### 1. Inventory Summary Report
 This report provides a comprehensive overview of your current stock on hand, allowing you to monitor availability and warehouse movements.
 
-| Report Name | Purpose |
-| :--- | :--- |
-| **Inventory Summary** | Displays current stock levels, quantities, and values across various sections. |
+**Inventory Summary** > Displays current stock levels, quantities, and values across various sections. 
 
 ---
 
@@ -32,7 +30,7 @@ To generate an accurate inventory view, configure the following filters:
 ---
 
 ### 3. Action Buttons
-* **View Report:** Click this button to render the inventory data directly on your screen.
+**View Report:** Click this button to render the inventory data directly on your screen.
 
 ![Inventory Reports](/assets/img/inventreport1.png)
 

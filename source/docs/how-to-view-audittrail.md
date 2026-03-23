@@ -14,16 +14,25 @@ The Audit Trail serves as the system's "black box," recording every significant 
 ---
 
 ### 1. Understanding the Audit Log
-The Audit Trail table displays real-time data on system interactions:
+The Audit Trail provides a granular, real-time history of every system interaction. Each log entry captures the following key data points:
 
-| Column Name | Description |
-| :--- | :--- |
-| **Transaction No.** | The specific ID or Reference Number of the record affected (e.g., SO# 102 or PR# 032600000). |
-| **Module** | The specific area of MyxFin where the action occurred (e.g., BANK, PURCHASE REQUEST, PAYMENT TERMS). |
-| **Event** | The type of action performed: **INSERTED** (Created), **UPDATED** (Edited), or **DELETED**. |
-| **User** | The name of the staff member who performed the action. |
-| **PC Address** | The IP address of the computer used, providing a location/network footprint for the event. |
-| **Date** | The exact timestamp (Year-Month-Day Hour:Minute:Second) of the activity. |
+* **Transaction No.** :
+The specific ID or Reference Number of the record affected (e.g., SO# 102 or PR# 032600000).
+
+* **Module** :
+The specific area of MyxFin where the action occurred (e.g., BANK, PURCHASE REQUEST, PAYMENT TERMS).
+
+* **Event** :
+The type of action performed: **INSERTED** (Created), **UPDATED** (Edited), or **DELETED**.
+
+* **User** :
+The name of the staff member who performed the action.
+
+* **PC Address** :
+The IP address of the computer used, providing a location/network footprint for the event.
+
+* **Date** :
+The exact timestamp (Year-Month-Day Hour:Minute:Second) of the activity.
 
 ---
 

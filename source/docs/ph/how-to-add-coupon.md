@@ -35,9 +35,9 @@ Para gumawa ng bagong coupon manually:
 
 8. **Coupon Days:** Ilagay ang bilang ng araw kung gaano katagal valid ang coupon **pagkatapos ma-activate**
 
-*Halimbawa: Kapag 30 ang inilagay, mag-e-expire ang coupon 30 araw mula sa araw na ito ay ginamit.*
-
 9. I-click ang **Save**.
+
+*Halimbawa: Kapag 30 ang inilagay, mag-e-expire ang coupon 30 araw mula sa araw na ito ay ginamit.*
 
 ---
 
@@ -66,7 +66,7 @@ Para sa maramihang paggawa ng vouchers, gamitin ang **Mass Upload** tool sa Coup
 - **Price** – Halagang ibabawas sa total ng customer  
 - **Barcode** – Unique code na ginagamit sa pag-validate ng coupon  
 - **Sales Debit** – GL account kung saan ibabawas ang halaga  
-- **Coupon Days** – Tagal ng validity; nagsisimula lamang ang expiration **pagkatapos ma-activate**  
+- **Coupon Days** – Tagal ng validity; nagsisimula lamang ang expiration pagkatapos ma-activate 
 
 ---
 

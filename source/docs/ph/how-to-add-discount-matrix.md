@@ -44,6 +44,7 @@ Para gumawa ng isang discount rule manually:
 Kung marami kang items na lalagyan ng discount, gamitin ang **Mass Upload** feature upang makatipid ng oras.
 
 **Mga Hakbang sa Mass Upload:**
+
 1. Sa Discount Matrix list view, i-click ang **Mass Upload** button (orange icon katabi ng Create New).
 
 2. **Label & Description:** Maglagay ng general na pangalan para sa batch upload.
